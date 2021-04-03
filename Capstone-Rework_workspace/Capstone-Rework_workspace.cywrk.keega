@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Capstone-Rework_workspace\Sensor_Cluster\user_core">
+<ExpandedNodeIds>
+<v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\Pins</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\Analog</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\DMA</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\Clocks</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\Interrupts</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\System</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\Directives</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\Flash Security</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Header Files</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Header Files\cyapicallbacks.h</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Source Files</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Source Files\main.c</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\user_core</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\user_core\util.c</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\user_core\util.h</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Header Files</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Header Files\cyapicallbacks.h</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Source Files</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Source Files\main.c</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\user_core</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\user_core\util.c</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\user_core\util.h</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cy_boot</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cy_dmac</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cy_lfclk</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\Em_EEPROM_Dynamic</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\UART</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\UART_rx</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\UART_SCBCLK</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\UART_tx</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cycodeshareexport.ld</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cycodeshareimport.ld</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cycodeshareimport.scat</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cydevice_trm.h</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cydevicegnu_trm.inc</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cydeviceiar_trm.inc</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cydevicerv_trm.inc</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cydisabledsheets.h</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cyfitter.h</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cyfitter_cfg.c</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cyfitter_cfg.h</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cyfittergnu.inc</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cyfitteriar.inc</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cyfitterrv.inc</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\cymetadata.c</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4\project.h</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_rx_PM.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SCBCLK.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_SPI_UART_INT.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx_PM.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\util.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.elf</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.hex</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.map</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.gpdsc</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.rpt</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.rpt</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\PSoC 4 Architecture TRM</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\PSoC 4200M Family Datasheet</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_boot_v6_0</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_dmac_v1_10</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\SCB_P4_v4_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\PSoC 4 Architecture TRM</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\PSoC 4200M Family Datasheet</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_boot_v6_0</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_dmac_v1_10</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\SCB_P4_v4_0.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Sensor_Cluster.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Sensor_Cluster.cydsn\main.c" />
+<name v=".\Sensor_Cluster.cydsn\Generated_Source\PSoC4\UART.c" />
+<name v=".\Sensor_Cluster.cydsn\Generated_Source\PSoC4\UART.h" />
+<name v=".\Sensor_Cluster.cydsn\Generated_Source\PSoC4\project.h" />
+<name v=".\Sensor_Cluster.cydsn\util.c" />
+<name v=".\Sensor_Cluster.cydsn\util.h" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1582, 721" SelectedTabbedMdiWindow="ff0ab1e4-9c3c-4589-9d67-7122f1f53492"><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\TopDesign\TopDesign.cysch" Guid="45b034ac-f7ca-4598-8b0e-43c0fb8175fc" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\main.c" Guid="ff0ab1e4-9c3c-4589-9d67-7122f1f53492" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Generated_Source\PSoC4\UART.c" Guid="dae0ab88-a368-424b-a67d-c1a7fb771ece" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Generated_Source\PSoC4\UART.h" Guid="b4a77514-05d3-4b49-bec7-ce7953397485" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Generated_Source\PSoC4\project.h" Guid="cf6d417d-f19d-40ed-8c12-529dd9458614" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\util.c" Guid="76f83130-f3f8-4713-b358-d3c18e9545fa" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\util.h" Guid="f6e2ca50-50c6-42ab-a1e8-038f39d7ee30" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
