@@ -14,23 +14,20 @@
 // User-Core Headers
 #include "user_core.h"
 
-#define VERSION "0.0.0"
+#define VERSION "0.0.1" 
 
-char sdata[MESSAGE_LENGTH];
 
 int main(void)
 {
-    user_core_initalize();
+    UserCore_Initalize();
     CyGlobalIntEnable; /* Enable global interrupts. */
 
-    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-
     sprintf(sdata, "Welcome to Sensor Cluster Firmware Version %s\r\n", VERSION);
-    uart_write(sdata, TRUE);
+    UART_Write(sdata, TRUE);
     
     for(;;)
     {
-        /* Place your application code here. */
+
     }
 }
 

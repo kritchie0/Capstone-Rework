@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 1
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 1
 
 
    1              		.syntax unified
@@ -19,14 +19,14 @@ ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 1
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              		.section	.text.uart_open,"ax",%progbits
+  19              		.section	.text.UserCore_Run,"ax",%progbits
   20              		.align	2
-  21              		.global	uart_open
+  21              		.global	UserCore_Run
   22              		.code	16
   23              		.thumb_func
-  24              		.type	uart_open, %function
-  25              	uart_open:
-  26              	.LFB36:
+  24              		.type	UserCore_Run, %function
+  25              	UserCore_Run:
+  26              	.LFB68:
   27              		.file 1 "user_core.c"
    1:user_core.c   **** /* ========================================
    2:user_core.c   ****  *
@@ -42,815 +42,1055 @@ ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 1
   12:user_core.c   **** 
   13:user_core.c   **** #include "user_core.h"
   14:user_core.c   **** 
-  15:user_core.c   **** extern void user_core_initalize(void)
+  15:user_core.c   **** void UserCore_Initalize(void)
   16:user_core.c   **** {
-  17:user_core.c   ****    uart_open();
-  18:user_core.c   **** }
-  19:user_core.c   **** 
-  20:user_core.c   **** extern void uart_open(void)
-  21:user_core.c   **** {
-  28              		.loc 1 21 0
+  17:user_core.c   ****     UART_Open();
+  18:user_core.c   ****     ADC_Open();
+  19:user_core.c   **** }
+  20:user_core.c   **** 
+  21:user_core.c   **** void UserCore_Run(void)
+  22:user_core.c   **** {
+  28              		.loc 1 22 0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 0
   31              		@ frame_needed = 0, uses_anonymous_args = 0
-  32 0000 10B5     		push	{r4, lr}
-  33              		.cfi_def_cfa_offset 8
-  34              		.cfi_offset 4, -8
-  35              		.cfi_offset 14, -4
-  22:user_core.c   ****     UART_Start();
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 2
+  32              		@ link register save eliminated.
+  23:user_core.c   ****     #if 0
+  24:user_core.c   ****     sadc_values sadc_raw;
+  25:user_core.c   ****     
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 2
 
 
-  36              		.loc 1 22 0
-  37 0002 FFF7FEFF 		bl	UART_Start
-  38              	.LVL0:
-  23:user_core.c   **** }
-  39              		.loc 1 23 0
-  40              		@ sp needed
-  41 0006 10BD     		pop	{r4, pc}
-  42              		.cfi_endproc
-  43              	.LFE36:
-  44              		.size	uart_open, .-uart_open
-  45              		.section	.text.user_core_initalize,"ax",%progbits
-  46              		.align	2
-  47              		.global	user_core_initalize
-  48              		.code	16
-  49              		.thumb_func
-  50              		.type	user_core_initalize, %function
-  51              	user_core_initalize:
-  52              	.LFB35:
-  16:user_core.c   ****    uart_open();
-  53              		.loc 1 16 0
-  54              		.cfi_startproc
-  55              		@ args = 0, pretend = 0, frame = 0
-  56              		@ frame_needed = 0, uses_anonymous_args = 0
-  57 0000 10B5     		push	{r4, lr}
-  58              		.cfi_def_cfa_offset 8
-  59              		.cfi_offset 4, -8
-  60              		.cfi_offset 14, -4
-  17:user_core.c   **** }
-  61              		.loc 1 17 0
-  62 0002 FFF7FEFF 		bl	uart_open
-  63              	.LVL1:
-  18:user_core.c   **** 
-  64              		.loc 1 18 0
-  65              		@ sp needed
-  66 0006 10BD     		pop	{r4, pc}
-  67              		.cfi_endproc
-  68              	.LFE35:
-  69              		.size	user_core_initalize, .-user_core_initalize
-  70              		.section	.text.uart_close,"ax",%progbits
-  71              		.align	2
-  72              		.global	uart_close
-  73              		.code	16
-  74              		.thumb_func
-  75              		.type	uart_close, %function
-  76              	uart_close:
-  77              	.LFB37:
-  24:user_core.c   **** 
-  25:user_core.c   **** extern void uart_close(void)
-  26:user_core.c   **** {
-  78              		.loc 1 26 0
-  79              		.cfi_startproc
-  80              		@ args = 0, pretend = 0, frame = 0
-  81              		@ frame_needed = 0, uses_anonymous_args = 0
-  82 0000 10B5     		push	{r4, lr}
-  83              		.cfi_def_cfa_offset 8
-  84              		.cfi_offset 4, -8
-  85              		.cfi_offset 14, -4
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 3
-
-
-  27:user_core.c   ****     UART_Stop();
-  86              		.loc 1 27 0
-  87 0002 FFF7FEFF 		bl	UART_Stop
-  88              	.LVL2:
-  28:user_core.c   **** }
-  89              		.loc 1 28 0
-  90              		@ sp needed
-  91 0006 10BD     		pop	{r4, pc}
-  92              		.cfi_endproc
-  93              	.LFE37:
-  94              		.size	uart_close, .-uart_close
-  95              		.section	.text.uart_read,"ax",%progbits
-  96              		.align	2
-  97              		.global	uart_read
-  98              		.code	16
-  99              		.thumb_func
- 100              		.type	uart_read, %function
- 101              	uart_read:
- 102              	.LFB38:
-  29:user_core.c   **** 
-  30:user_core.c   **** extern void uart_read(void)
-  31:user_core.c   **** {
- 103              		.loc 1 31 0
- 104              		.cfi_startproc
- 105              		@ args = 0, pretend = 0, frame = 0
- 106              		@ frame_needed = 0, uses_anonymous_args = 0
- 107              		@ link register save eliminated.
-  32:user_core.c   ****     //
-  33:user_core.c   **** }
- 108              		.loc 1 33 0
- 109              		@ sp needed
- 110 0000 7047     		bx	lr
- 111              		.cfi_endproc
- 112              	.LFE38:
- 113              		.size	uart_read, .-uart_read
- 114 0002 C046     		.section	.text.uart_write,"ax",%progbits
- 115              		.align	2
- 116              		.global	uart_write
- 117              		.code	16
- 118              		.thumb_func
- 119              		.type	uart_write, %function
- 120              	uart_write:
- 121              	.LFB39:
-  34:user_core.c   **** 
-  35:user_core.c   **** extern void uart_write(char *data, int clear)
-  36:user_core.c   **** { 
- 122              		.loc 1 36 0
- 123              		.cfi_startproc
- 124              		@ args = 0, pretend = 0, frame = 0
- 125              		@ frame_needed = 0, uses_anonymous_args = 0
- 126              	.LVL3:
- 127 0000 10B5     		push	{r4, lr}
- 128              		.cfi_def_cfa_offset 8
- 129              		.cfi_offset 4, -8
- 130              		.cfi_offset 14, -4
- 131 0002 0400     		movs	r4, r0
-  37:user_core.c   ****     if(clear == TRUE){
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 4
-
-
- 132              		.loc 1 37 0
- 133 0004 0129     		cmp	r1, #1
- 134 0006 05D1     		bne	.L6
-  38:user_core.c   ****         UART_UartPutString(CLEAR_TERMINAL);
- 135              		.loc 1 38 0
- 136 0008 0448     		ldr	r0, .L7
- 137              	.LVL4:
- 138 000a FFF7FEFF 		bl	UART_UartPutString
- 139              	.LVL5:
-  39:user_core.c   ****         UART_UartPutString(CURSOR_HOME_TERMINAL);
- 140              		.loc 1 39 0
- 141 000e 0448     		ldr	r0, .L7+4
- 142 0010 FFF7FEFF 		bl	UART_UartPutString
- 143              	.LVL6:
- 144              	.L6:
+  26:user_core.c   ****     DMA_Start((void *)ADC_SAR_CHAN0_RESULT_PTR, (void *)&sadc_raw.v12);
+  27:user_core.c   ****     DMA_Start((void *)ADC_SAR_CHAN1_RESULT_PTR, (void *)&sadc_raw.v5);
+  28:user_core.c   ****     DMA_Start((void *)ADC_SAR_CHAN2_RESULT_PTR, (void *)&sadc_raw.external_temperature);
+  29:user_core.c   ****     DMA_Start((void *)ADC_SAR_CHAN3_RESULT_PTR, (void *)&sadc_raw.mcu_temperature);
+  30:user_core.c   ****     
+  31:user_core.c   ****     ADC_StartConvert();
+  32:user_core.c   ****     
+  33:user_core.c   ****     if(0u != CyDmaGetInterruptSourceMasked())
+  34:user_core.c   ****     {
+  35:user_core.c   ****         /* Once asserted, interrupt remains high (active) until cleared. */
+  36:user_core.c   ****         CyDmaClearInterruptSource(DMA_CHANNEL_MASK);
+  37:user_core.c   ****         
+  38:user_core.c   ****         sprintf(sdata, "12V: %d\t 5V: %d\t Ext_Temp: %d\t MCU_Temp: %d\r\n", sadc_raw.v12, sadc_raw
+  39:user_core.c   ****             sadc_raw.external_temperature, sadc_raw.mcu_temperature);
   40:user_core.c   ****     }
-  41:user_core.c   ****     
-  42:user_core.c   ****     UART_UartPutString(data);
- 145              		.loc 1 42 0
- 146 0014 2000     		movs	r0, r4
- 147 0016 FFF7FEFF 		bl	UART_UartPutString
- 148              	.LVL7:
-  43:user_core.c   **** }
- 149              		.loc 1 43 0
- 150              		@ sp needed
- 151              	.LVL8:
- 152 001a 10BD     		pop	{r4, pc}
- 153              	.L8:
- 154              		.align	2
- 155              	.L7:
- 156 001c 00000000 		.word	.LC0
- 157 0020 08000000 		.word	.LC2
+  41:user_core.c   ****     #endif
+  42:user_core.c   **** }
+  33              		.loc 1 42 0
+  34              		@ sp needed
+  35 0000 7047     		bx	lr
+  36              		.cfi_endproc
+  37              	.LFE68:
+  38              		.size	UserCore_Run, .-UserCore_Run
+  39 0002 C046     		.section	.text.ADC_Open,"ax",%progbits
+  40              		.align	2
+  41              		.global	ADC_Open
+  42              		.code	16
+  43              		.thumb_func
+  44              		.type	ADC_Open, %function
+  45              	ADC_Open:
+  46              	.LFB69:
+  43:user_core.c   **** 
+  44:user_core.c   **** // ADC Functionality
+  45:user_core.c   **** void ADC_Open(void)
+  46:user_core.c   **** {
+  47              		.loc 1 46 0
+  48              		.cfi_startproc
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51 0000 10B5     		push	{r4, lr}
+  52              		.cfi_def_cfa_offset 8
+  53              		.cfi_offset 4, -8
+  54              		.cfi_offset 14, -4
+  47:user_core.c   ****     ADC_Start();
+  55              		.loc 1 47 0
+  56 0002 FFF7FEFF 		bl	ADC_Start
+  57              	.LVL0:
+  48:user_core.c   **** }
+  58              		.loc 1 48 0
+  59              		@ sp needed
+  60 0006 10BD     		pop	{r4, pc}
+  61              		.cfi_endproc
+  62              	.LFE69:
+  63              		.size	ADC_Open, .-ADC_Open
+  64              		.section	.text.ADC_Read,"ax",%progbits
+  65              		.align	2
+  66              		.global	ADC_Read
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 3
+
+
+  67              		.code	16
+  68              		.thumb_func
+  69              		.type	ADC_Read, %function
+  70              	ADC_Read:
+  71              	.LFB70:
+  49:user_core.c   **** 
+  50:user_core.c   **** void ADC_Read(void)
+  51:user_core.c   **** {
+  72              		.loc 1 51 0
+  73              		.cfi_startproc
+  74              		@ args = 0, pretend = 0, frame = 0
+  75              		@ frame_needed = 0, uses_anonymous_args = 0
+  76              		@ link register save eliminated.
+  52:user_core.c   ****     
+  53:user_core.c   ****     //DMA_Start((void *)ADC_SAR_CHAN0_RESULT_PTR, (void *)&adc_sample);
+  54:user_core.c   ****     //ADC_StartConvert();
+  55:user_core.c   **** }
+  77              		.loc 1 55 0
+  78              		@ sp needed
+  79 0000 7047     		bx	lr
+  80              		.cfi_endproc
+  81              	.LFE70:
+  82              		.size	ADC_Read, .-ADC_Read
+  83 0002 C046     		.section	.text.UART_Open,"ax",%progbits
+  84              		.align	2
+  85              		.global	UART_Open
+  86              		.code	16
+  87              		.thumb_func
+  88              		.type	UART_Open, %function
+  89              	UART_Open:
+  90              	.LFB71:
+  56:user_core.c   **** 
+  57:user_core.c   **** 
+  58:user_core.c   **** // UART Functionality
+  59:user_core.c   **** void UART_Open(void)
+  60:user_core.c   **** {
+  91              		.loc 1 60 0
+  92              		.cfi_startproc
+  93              		@ args = 0, pretend = 0, frame = 0
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+  95 0000 10B5     		push	{r4, lr}
+  96              		.cfi_def_cfa_offset 8
+  97              		.cfi_offset 4, -8
+  98              		.cfi_offset 14, -4
+  61:user_core.c   ****     UART_Start();
+  99              		.loc 1 61 0
+ 100 0002 FFF7FEFF 		bl	UART_Start
+ 101              	.LVL1:
+  62:user_core.c   **** }
+ 102              		.loc 1 62 0
+ 103              		@ sp needed
+ 104 0006 10BD     		pop	{r4, pc}
+ 105              		.cfi_endproc
+ 106              	.LFE71:
+ 107              		.size	UART_Open, .-UART_Open
+ 108              		.section	.text.UserCore_Initalize,"ax",%progbits
+ 109              		.align	2
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 4
+
+
+ 110              		.global	UserCore_Initalize
+ 111              		.code	16
+ 112              		.thumb_func
+ 113              		.type	UserCore_Initalize, %function
+ 114              	UserCore_Initalize:
+ 115              	.LFB67:
+  16:user_core.c   ****     UART_Open();
+ 116              		.loc 1 16 0
+ 117              		.cfi_startproc
+ 118              		@ args = 0, pretend = 0, frame = 0
+ 119              		@ frame_needed = 0, uses_anonymous_args = 0
+ 120 0000 10B5     		push	{r4, lr}
+ 121              		.cfi_def_cfa_offset 8
+ 122              		.cfi_offset 4, -8
+ 123              		.cfi_offset 14, -4
+  17:user_core.c   ****     ADC_Open();
+ 124              		.loc 1 17 0
+ 125 0002 FFF7FEFF 		bl	UART_Open
+ 126              	.LVL2:
+  18:user_core.c   **** }
+ 127              		.loc 1 18 0
+ 128 0006 FFF7FEFF 		bl	ADC_Open
+ 129              	.LVL3:
+  19:user_core.c   **** 
+ 130              		.loc 1 19 0
+ 131              		@ sp needed
+ 132 000a 10BD     		pop	{r4, pc}
+ 133              		.cfi_endproc
+ 134              	.LFE67:
+ 135              		.size	UserCore_Initalize, .-UserCore_Initalize
+ 136              		.section	.text.UART_Close,"ax",%progbits
+ 137              		.align	2
+ 138              		.global	UART_Close
+ 139              		.code	16
+ 140              		.thumb_func
+ 141              		.type	UART_Close, %function
+ 142              	UART_Close:
+ 143              	.LFB72:
+  63:user_core.c   **** 
+  64:user_core.c   **** void UART_Close(void)
+  65:user_core.c   **** {
+ 144              		.loc 1 65 0
+ 145              		.cfi_startproc
+ 146              		@ args = 0, pretend = 0, frame = 0
+ 147              		@ frame_needed = 0, uses_anonymous_args = 0
+ 148 0000 10B5     		push	{r4, lr}
+ 149              		.cfi_def_cfa_offset 8
+ 150              		.cfi_offset 4, -8
+ 151              		.cfi_offset 14, -4
+  66:user_core.c   ****     UART_Stop();
+ 152              		.loc 1 66 0
+ 153 0002 FFF7FEFF 		bl	UART_Stop
+ 154              	.LVL4:
+  67:user_core.c   **** }
+ 155              		.loc 1 67 0
+ 156              		@ sp needed
+ 157 0006 10BD     		pop	{r4, pc}
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 5
+
+
  158              		.cfi_endproc
- 159              	.LFE39:
- 160              		.size	uart_write, .-uart_write
- 161              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 159              	.LFE72:
+ 160              		.size	UART_Close, .-UART_Close
+ 161              		.section	.text.UART_Read,"ax",%progbits
  162              		.align	2
- 163              	.LC0:
- 164 0000 1B5B324A 		.ascii	"\033[2J\000"
- 164      00
- 165 0005 000000   		.space	3
- 166              	.LC2:
- 167 0008 1B5B4800 		.ascii	"\033[H\000"
- 168              		.text
- 169              	.Letext0:
- 170              		.file 2 "Generated_Source\\PSoC4/UART.h"
- 171              		.file 3 "Generated_Source\\PSoC4/UART_SPI_UART.h"
- 172              		.section	.debug_info,"",%progbits
- 173              	.Ldebug_info0:
- 174 0000 93010000 		.4byte	0x193
- 175 0004 0400     		.2byte	0x4
- 176 0006 00000000 		.4byte	.Ldebug_abbrev0
- 177 000a 04       		.byte	0x4
- 178 000b 01       		.uleb128 0x1
- 179 000c 1A010000 		.4byte	.LASF23
- 180 0010 0C       		.byte	0xc
- 181 0011 0E000000 		.4byte	.LASF24
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 5
+ 163              		.global	UART_Read
+ 164              		.code	16
+ 165              		.thumb_func
+ 166              		.type	UART_Read, %function
+ 167              	UART_Read:
+ 168              	.LFB73:
+  68:user_core.c   **** 
+  69:user_core.c   **** void UART_Read(void)
+  70:user_core.c   **** {
+ 169              		.loc 1 70 0
+ 170              		.cfi_startproc
+ 171              		@ args = 0, pretend = 0, frame = 0
+ 172              		@ frame_needed = 0, uses_anonymous_args = 0
+ 173              		@ link register save eliminated.
+  71:user_core.c   ****     // TODO Add read functionality
+  72:user_core.c   **** }
+ 174              		.loc 1 72 0
+ 175              		@ sp needed
+ 176 0000 7047     		bx	lr
+ 177              		.cfi_endproc
+ 178              	.LFE73:
+ 179              		.size	UART_Read, .-UART_Read
+ 180 0002 C046     		.section	.text.UART_Write,"ax",%progbits
+ 181              		.align	2
+ 182              		.global	UART_Write
+ 183              		.code	16
+ 184              		.thumb_func
+ 185              		.type	UART_Write, %function
+ 186              	UART_Write:
+ 187              	.LFB74:
+  73:user_core.c   **** 
+  74:user_core.c   **** void UART_Write(char *data, int clear)
+  75:user_core.c   **** { 
+ 188              		.loc 1 75 0
+ 189              		.cfi_startproc
+ 190              		@ args = 0, pretend = 0, frame = 0
+ 191              		@ frame_needed = 0, uses_anonymous_args = 0
+ 192              	.LVL5:
+ 193 0000 10B5     		push	{r4, lr}
+ 194              		.cfi_def_cfa_offset 8
+ 195              		.cfi_offset 4, -8
+ 196              		.cfi_offset 14, -4
+ 197 0002 0400     		movs	r4, r0
+  76:user_core.c   ****     if(clear == TRUE){
+ 198              		.loc 1 76 0
+ 199 0004 0129     		cmp	r1, #1
+ 200 0006 05D1     		bne	.L9
+  77:user_core.c   ****         UART_UartPutString(CLEAR_TERMINAL);
+ 201              		.loc 1 77 0
+ 202 0008 0448     		ldr	r0, .L10
+ 203              	.LVL6:
+ 204 000a FFF7FEFF 		bl	UART_UartPutString
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 6
 
 
- 182 0015 27000000 		.4byte	.LASF25
- 183 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 184 001d 00000000 		.4byte	0
- 185 0021 00000000 		.4byte	.Ldebug_line0
- 186 0025 02       		.uleb128 0x2
- 187 0026 01       		.byte	0x1
- 188 0027 06       		.byte	0x6
- 189 0028 BB010000 		.4byte	.LASF0
- 190 002c 02       		.uleb128 0x2
- 191 002d 01       		.byte	0x1
- 192 002e 08       		.byte	0x8
- 193 002f E2000000 		.4byte	.LASF1
- 194 0033 02       		.uleb128 0x2
- 195 0034 02       		.byte	0x2
- 196 0035 05       		.byte	0x5
- 197 0036 D9010000 		.4byte	.LASF2
- 198 003a 02       		.uleb128 0x2
- 199 003b 02       		.byte	0x2
- 200 003c 07       		.byte	0x7
- 201 003d A8010000 		.4byte	.LASF3
- 202 0041 02       		.uleb128 0x2
- 203 0042 04       		.byte	0x4
- 204 0043 05       		.byte	0x5
- 205 0044 FF000000 		.4byte	.LASF4
- 206 0048 02       		.uleb128 0x2
- 207 0049 04       		.byte	0x4
- 208 004a 07       		.byte	0x7
- 209 004b 95000000 		.4byte	.LASF5
- 210 004f 02       		.uleb128 0x2
- 211 0050 08       		.byte	0x8
- 212 0051 05       		.byte	0x5
- 213 0052 00000000 		.4byte	.LASF6
- 214 0056 02       		.uleb128 0x2
- 215 0057 08       		.byte	0x8
- 216 0058 07       		.byte	0x7
- 217 0059 A7000000 		.4byte	.LASF7
- 218 005d 03       		.uleb128 0x3
- 219 005e 04       		.byte	0x4
- 220 005f 05       		.byte	0x5
- 221 0060 696E7400 		.ascii	"int\000"
- 222 0064 02       		.uleb128 0x2
- 223 0065 04       		.byte	0x4
- 224 0066 07       		.byte	0x7
- 225 0067 1A000000 		.4byte	.LASF8
- 226 006b 02       		.uleb128 0x2
- 227 006c 04       		.byte	0x4
- 228 006d 04       		.byte	0x4
- 229 006e D3010000 		.4byte	.LASF9
- 230 0072 02       		.uleb128 0x2
- 231 0073 08       		.byte	0x8
- 232 0074 04       		.byte	0x4
- 233 0075 08010000 		.4byte	.LASF10
- 234 0079 02       		.uleb128 0x2
- 235 007a 01       		.byte	0x1
- 236 007b 08       		.byte	0x8
- 237 007c FA000000 		.4byte	.LASF11
- 238 0080 02       		.uleb128 0x2
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 6
+ 205              	.LVL7:
+  78:user_core.c   ****         UART_UartPutString(CURSOR_HOME_TERMINAL);
+ 206              		.loc 1 78 0
+ 207 000e 0448     		ldr	r0, .L10+4
+ 208 0010 FFF7FEFF 		bl	UART_UartPutString
+ 209              	.LVL8:
+ 210              	.L9:
+  79:user_core.c   ****     }
+  80:user_core.c   ****     
+  81:user_core.c   ****     UART_UartPutString(data);
+ 211              		.loc 1 81 0
+ 212 0014 2000     		movs	r0, r4
+ 213 0016 FFF7FEFF 		bl	UART_UartPutString
+ 214              	.LVL9:
+  82:user_core.c   **** }
+ 215              		.loc 1 82 0
+ 216              		@ sp needed
+ 217              	.LVL10:
+ 218 001a 10BD     		pop	{r4, pc}
+ 219              	.L11:
+ 220              		.align	2
+ 221              	.L10:
+ 222 001c 00000000 		.word	.LC0
+ 223 0020 08000000 		.word	.LC2
+ 224              		.cfi_endproc
+ 225              	.LFE74:
+ 226              		.size	UART_Write, .-UART_Write
+ 227              		.comm	sdata,255,4
+ 228              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 229              		.align	2
+ 230              	.LC0:
+ 231 0000 1B5B324A 		.ascii	"\033[2J\000"
+ 231      00
+ 232 0005 000000   		.space	3
+ 233              	.LC2:
+ 234 0008 1B5B4800 		.ascii	"\033[H\000"
+ 235              		.text
+ 236              	.Letext0:
+ 237              		.file 2 "Generated_Source\\PSoC4/ADC.h"
+ 238              		.file 3 "Generated_Source\\PSoC4/UART.h"
+ 239              		.file 4 "Generated_Source\\PSoC4/UART_SPI_UART.h"
+ 240              		.file 5 "user_core.h"
+ 241              		.section	.debug_info,"",%progbits
+ 242              	.Ldebug_info0:
+ 243 0000 09020000 		.4byte	0x209
+ 244 0004 0400     		.2byte	0x4
+ 245 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 246 000a 04       		.byte	0x4
+ 247 000b 01       		.uleb128 0x1
+ 248 000c 4D010000 		.4byte	.LASF28
+ 249 0010 0C       		.byte	0xc
+ 250 0011 20020000 		.4byte	.LASF29
+ 251 0015 2A000000 		.4byte	.LASF30
+ 252 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 253 001d 00000000 		.4byte	0
+ 254 0021 00000000 		.4byte	.Ldebug_line0
+ 255 0025 02       		.uleb128 0x2
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 7
 
 
- 239 0081 08       		.byte	0x8
- 240 0082 04       		.byte	0x4
- 241 0083 C7010000 		.4byte	.LASF12
- 242 0087 02       		.uleb128 0x2
- 243 0088 04       		.byte	0x4
- 244 0089 07       		.byte	0x7
- 245 008a 01020000 		.4byte	.LASF13
- 246 008e 04       		.uleb128 0x4
- 247 008f 04       		.byte	0x4
- 248 0090 79000000 		.4byte	0x79
- 249 0094 05       		.uleb128 0x5
- 250 0095 F0000000 		.4byte	.LASF14
- 251 0099 01       		.byte	0x1
- 252 009a 14       		.byte	0x14
- 253 009b 00000000 		.4byte	.LFB36
- 254 009f 08000000 		.4byte	.LFE36-.LFB36
- 255 00a3 01       		.uleb128 0x1
- 256 00a4 9C       		.byte	0x9c
- 257 00a5 B3000000 		.4byte	0xb3
- 258 00a9 06       		.uleb128 0x6
- 259 00aa 06000000 		.4byte	.LVL0
- 260 00ae 74010000 		.4byte	0x174
- 261 00b2 00       		.byte	0
- 262 00b3 05       		.uleb128 0x5
- 263 00b4 7B000000 		.4byte	.LASF15
- 264 00b8 01       		.byte	0x1
- 265 00b9 0F       		.byte	0xf
- 266 00ba 00000000 		.4byte	.LFB35
- 267 00be 08000000 		.4byte	.LFE35-.LFB35
- 268 00c2 01       		.uleb128 0x1
- 269 00c3 9C       		.byte	0x9c
- 270 00c4 D2000000 		.4byte	0xd2
- 271 00c8 06       		.uleb128 0x6
- 272 00c9 06000000 		.4byte	.LVL1
- 273 00cd 94000000 		.4byte	0x94
- 274 00d1 00       		.byte	0
- 275 00d2 05       		.uleb128 0x5
- 276 00d3 F6010000 		.4byte	.LASF16
- 277 00d7 01       		.byte	0x1
- 278 00d8 19       		.byte	0x19
- 279 00d9 00000000 		.4byte	.LFB37
- 280 00dd 08000000 		.4byte	.LFE37-.LFB37
- 281 00e1 01       		.uleb128 0x1
- 282 00e2 9C       		.byte	0x9c
- 283 00e3 F1000000 		.4byte	0xf1
- 284 00e7 06       		.uleb128 0x6
- 285 00e8 06000000 		.4byte	.LVL2
- 286 00ec 7F010000 		.4byte	0x17f
- 287 00f0 00       		.byte	0
- 288 00f1 07       		.uleb128 0x7
- 289 00f2 C3000000 		.4byte	.LASF26
- 290 00f6 01       		.byte	0x1
- 291 00f7 1E       		.byte	0x1e
- 292 00f8 00000000 		.4byte	.LFB38
- 293 00fc 02000000 		.4byte	.LFE38-.LFB38
- 294 0100 01       		.uleb128 0x1
- 295 0101 9C       		.byte	0x9c
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 7
+ 256 0026 01       		.byte	0x1
+ 257 0027 06       		.byte	0x6
+ 258 0028 2C020000 		.4byte	.LASF0
+ 259 002c 02       		.uleb128 0x2
+ 260 002d 01       		.byte	0x1
+ 261 002e 08       		.byte	0x8
+ 262 002f 9C000000 		.4byte	.LASF1
+ 263 0033 02       		.uleb128 0x2
+ 264 0034 02       		.byte	0x2
+ 265 0035 05       		.byte	0x5
+ 266 0036 01020000 		.4byte	.LASF2
+ 267 003a 02       		.uleb128 0x2
+ 268 003b 02       		.byte	0x2
+ 269 003c 07       		.byte	0x7
+ 270 003d C7000000 		.4byte	.LASF3
+ 271 0041 02       		.uleb128 0x2
+ 272 0042 04       		.byte	0x4
+ 273 0043 05       		.byte	0x5
+ 274 0044 0B020000 		.4byte	.LASF4
+ 275 0048 02       		.uleb128 0x2
+ 276 0049 04       		.byte	0x4
+ 277 004a 07       		.byte	0x7
+ 278 004b B5000000 		.4byte	.LASF5
+ 279 004f 02       		.uleb128 0x2
+ 280 0050 08       		.byte	0x8
+ 281 0051 05       		.byte	0x5
+ 282 0052 E4010000 		.4byte	.LASF6
+ 283 0056 02       		.uleb128 0x2
+ 284 0057 08       		.byte	0x8
+ 285 0058 07       		.byte	0x7
+ 286 0059 22010000 		.4byte	.LASF7
+ 287 005d 03       		.uleb128 0x3
+ 288 005e 04       		.byte	0x4
+ 289 005f 05       		.byte	0x5
+ 290 0060 696E7400 		.ascii	"int\000"
+ 291 0064 02       		.uleb128 0x2
+ 292 0065 04       		.byte	0x4
+ 293 0066 07       		.byte	0x7
+ 294 0067 15010000 		.4byte	.LASF8
+ 295 006b 02       		.uleb128 0x2
+ 296 006c 04       		.byte	0x4
+ 297 006d 04       		.byte	0x4
+ 298 006e 91000000 		.4byte	.LASF9
+ 299 0072 02       		.uleb128 0x2
+ 300 0073 08       		.byte	0x8
+ 301 0074 04       		.byte	0x4
+ 302 0075 F8000000 		.4byte	.LASF10
+ 303 0079 02       		.uleb128 0x2
+ 304 007a 01       		.byte	0x1
+ 305 007b 08       		.byte	0x8
+ 306 007c F2010000 		.4byte	.LASF11
+ 307 0080 02       		.uleb128 0x2
+ 308 0081 08       		.byte	0x8
+ 309 0082 04       		.byte	0x4
+ 310 0083 14020000 		.4byte	.LASF12
+ 311 0087 02       		.uleb128 0x2
+ 312 0088 04       		.byte	0x4
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 8
 
 
- 296 0102 05       		.uleb128 0x5
- 297 0103 0F010000 		.4byte	.LASF17
- 298 0107 01       		.byte	0x1
- 299 0108 23       		.byte	0x23
- 300 0109 00000000 		.4byte	.LFB39
- 301 010d 24000000 		.4byte	.LFE39-.LFB39
- 302 0111 01       		.uleb128 0x1
- 303 0112 9C       		.byte	0x9c
- 304 0113 74010000 		.4byte	0x174
- 305 0117 08       		.uleb128 0x8
- 306 0118 BE000000 		.4byte	.LASF18
- 307 011c 01       		.byte	0x1
- 308 011d 23       		.byte	0x23
- 309 011e 8E000000 		.4byte	0x8e
- 310 0122 00000000 		.4byte	.LLST0
- 311 0126 08       		.uleb128 0x8
- 312 0127 8F000000 		.4byte	.LASF19
- 313 012b 01       		.byte	0x1
- 314 012c 23       		.byte	0x23
- 315 012d 5D000000 		.4byte	0x5d
- 316 0131 2C000000 		.4byte	.LLST1
- 317 0135 09       		.uleb128 0x9
- 318 0136 0E000000 		.4byte	.LVL5
- 319 013a 8A010000 		.4byte	0x18a
- 320 013e 4C010000 		.4byte	0x14c
- 321 0142 0A       		.uleb128 0xa
- 322 0143 01       		.uleb128 0x1
- 323 0144 50       		.byte	0x50
- 324 0145 05       		.uleb128 0x5
- 325 0146 03       		.byte	0x3
- 326 0147 00000000 		.4byte	.LC0
- 327 014b 00       		.byte	0
- 328 014c 09       		.uleb128 0x9
- 329 014d 14000000 		.4byte	.LVL6
- 330 0151 8A010000 		.4byte	0x18a
- 331 0155 63010000 		.4byte	0x163
- 332 0159 0A       		.uleb128 0xa
- 333 015a 01       		.uleb128 0x1
- 334 015b 50       		.byte	0x50
- 335 015c 05       		.uleb128 0x5
- 336 015d 03       		.byte	0x3
- 337 015e 08000000 		.4byte	.LC2
- 338 0162 00       		.byte	0
- 339 0163 0B       		.uleb128 0xb
- 340 0164 1A000000 		.4byte	.LVL7
- 341 0168 8A010000 		.4byte	0x18a
- 342 016c 0A       		.uleb128 0xa
- 343 016d 01       		.uleb128 0x1
- 344 016e 50       		.byte	0x50
- 345 016f 02       		.uleb128 0x2
- 346 0170 74       		.byte	0x74
- 347 0171 00       		.sleb128 0
- 348 0172 00       		.byte	0
- 349 0173 00       		.byte	0
- 350 0174 0C       		.uleb128 0xc
- 351 0175 D7000000 		.4byte	.LASF20
- 352 0179 D7000000 		.4byte	.LASF20
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 8
+ 313 0089 07       		.byte	0x7
+ 314 008a DB010000 		.4byte	.LASF13
+ 315 008e 04       		.uleb128 0x4
+ 316 008f 04       		.byte	0x4
+ 317 0090 79000000 		.4byte	0x79
+ 318 0094 05       		.uleb128 0x5
+ 319 0095 08010000 		.4byte	.LASF14
+ 320 0099 01       		.byte	0x1
+ 321 009a 15       		.byte	0x15
+ 322 009b 00000000 		.4byte	.LFB68
+ 323 009f 02000000 		.4byte	.LFE68-.LFB68
+ 324 00a3 01       		.uleb128 0x1
+ 325 00a4 9C       		.byte	0x9c
+ 326 00a5 06       		.uleb128 0x6
+ 327 00a6 FF000000 		.4byte	.LASF16
+ 328 00aa 01       		.byte	0x1
+ 329 00ab 2D       		.byte	0x2d
+ 330 00ac 00000000 		.4byte	.LFB69
+ 331 00b0 08000000 		.4byte	.LFE69-.LFB69
+ 332 00b4 01       		.uleb128 0x1
+ 333 00b5 9C       		.byte	0x9c
+ 334 00b6 C4000000 		.4byte	0xc4
+ 335 00ba 07       		.uleb128 0x7
+ 336 00bb 06000000 		.4byte	.LVL0
+ 337 00bf DF010000 		.4byte	0x1df
+ 338 00c3 00       		.byte	0
+ 339 00c4 05       		.uleb128 0x5
+ 340 00c5 11000000 		.4byte	.LASF15
+ 341 00c9 01       		.byte	0x1
+ 342 00ca 32       		.byte	0x32
+ 343 00cb 00000000 		.4byte	.LFB70
+ 344 00cf 02000000 		.4byte	.LFE70-.LFB70
+ 345 00d3 01       		.uleb128 0x1
+ 346 00d4 9C       		.byte	0x9c
+ 347 00d5 06       		.uleb128 0x6
+ 348 00d6 20000000 		.4byte	.LASF17
+ 349 00da 01       		.byte	0x1
+ 350 00db 3B       		.byte	0x3b
+ 351 00dc 00000000 		.4byte	.LFB71
+ 352 00e0 08000000 		.4byte	.LFE71-.LFB71
+ 353 00e4 01       		.uleb128 0x1
+ 354 00e5 9C       		.byte	0x9c
+ 355 00e6 F4000000 		.4byte	0xf4
+ 356 00ea 07       		.uleb128 0x7
+ 357 00eb 06000000 		.4byte	.LVL1
+ 358 00ef EA010000 		.4byte	0x1ea
+ 359 00f3 00       		.byte	0
+ 360 00f4 06       		.uleb128 0x6
+ 361 00f5 E5000000 		.4byte	.LASF18
+ 362 00f9 01       		.byte	0x1
+ 363 00fa 0F       		.byte	0xf
+ 364 00fb 00000000 		.4byte	.LFB67
+ 365 00ff 0C000000 		.4byte	.LFE67-.LFB67
+ 366 0103 01       		.uleb128 0x1
+ 367 0104 9C       		.byte	0x9c
+ 368 0105 1C010000 		.4byte	0x11c
+ 369 0109 07       		.uleb128 0x7
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 9
 
 
- 353 017d 02       		.byte	0x2
- 354 017e 72       		.byte	0x72
- 355 017f 0C       		.uleb128 0xc
- 356 0180 CD000000 		.4byte	.LASF21
- 357 0184 CD000000 		.4byte	.LASF21
- 358 0188 02       		.byte	0x2
- 359 0189 73       		.byte	0x73
- 360 018a 0D       		.uleb128 0xd
- 361 018b E3010000 		.4byte	.LASF22
- 362 018f E3010000 		.4byte	.LASF22
- 363 0193 03       		.byte	0x3
- 364 0194 2A03     		.2byte	0x32a
- 365 0196 00       		.byte	0
- 366              		.section	.debug_abbrev,"",%progbits
- 367              	.Ldebug_abbrev0:
- 368 0000 01       		.uleb128 0x1
- 369 0001 11       		.uleb128 0x11
- 370 0002 01       		.byte	0x1
- 371 0003 25       		.uleb128 0x25
- 372 0004 0E       		.uleb128 0xe
- 373 0005 13       		.uleb128 0x13
- 374 0006 0B       		.uleb128 0xb
- 375 0007 03       		.uleb128 0x3
- 376 0008 0E       		.uleb128 0xe
- 377 0009 1B       		.uleb128 0x1b
- 378 000a 0E       		.uleb128 0xe
- 379 000b 55       		.uleb128 0x55
- 380 000c 17       		.uleb128 0x17
- 381 000d 11       		.uleb128 0x11
- 382 000e 01       		.uleb128 0x1
- 383 000f 10       		.uleb128 0x10
- 384 0010 17       		.uleb128 0x17
- 385 0011 00       		.byte	0
- 386 0012 00       		.byte	0
- 387 0013 02       		.uleb128 0x2
- 388 0014 24       		.uleb128 0x24
- 389 0015 00       		.byte	0
- 390 0016 0B       		.uleb128 0xb
- 391 0017 0B       		.uleb128 0xb
- 392 0018 3E       		.uleb128 0x3e
- 393 0019 0B       		.uleb128 0xb
- 394 001a 03       		.uleb128 0x3
- 395 001b 0E       		.uleb128 0xe
- 396 001c 00       		.byte	0
- 397 001d 00       		.byte	0
- 398 001e 03       		.uleb128 0x3
- 399 001f 24       		.uleb128 0x24
- 400 0020 00       		.byte	0
- 401 0021 0B       		.uleb128 0xb
- 402 0022 0B       		.uleb128 0xb
- 403 0023 3E       		.uleb128 0x3e
- 404 0024 0B       		.uleb128 0xb
- 405 0025 03       		.uleb128 0x3
- 406 0026 08       		.uleb128 0x8
- 407 0027 00       		.byte	0
- 408 0028 00       		.byte	0
- 409 0029 04       		.uleb128 0x4
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 9
+ 370 010a 06000000 		.4byte	.LVL2
+ 371 010e D5000000 		.4byte	0xd5
+ 372 0112 07       		.uleb128 0x7
+ 373 0113 0A000000 		.4byte	.LVL3
+ 374 0117 A5000000 		.4byte	0xa5
+ 375 011b 00       		.byte	0
+ 376 011c 06       		.uleb128 0x6
+ 377 011d 00000000 		.4byte	.LASF19
+ 378 0121 01       		.byte	0x1
+ 379 0122 40       		.byte	0x40
+ 380 0123 00000000 		.4byte	.LFB72
+ 381 0127 08000000 		.4byte	.LFE72-.LFB72
+ 382 012b 01       		.uleb128 0x1
+ 383 012c 9C       		.byte	0x9c
+ 384 012d 3B010000 		.4byte	0x13b
+ 385 0131 07       		.uleb128 0x7
+ 386 0132 06000000 		.4byte	.LVL4
+ 387 0136 F5010000 		.4byte	0x1f5
+ 388 013a 00       		.byte	0
+ 389 013b 05       		.uleb128 0x5
+ 390 013c F7010000 		.4byte	.LASF20
+ 391 0140 01       		.byte	0x1
+ 392 0141 45       		.byte	0x45
+ 393 0142 00000000 		.4byte	.LFB73
+ 394 0146 02000000 		.4byte	.LFE73-.LFB73
+ 395 014a 01       		.uleb128 0x1
+ 396 014b 9C       		.byte	0x9c
+ 397 014c 06       		.uleb128 0x6
+ 398 014d AA000000 		.4byte	.LASF21
+ 399 0151 01       		.byte	0x1
+ 400 0152 4A       		.byte	0x4a
+ 401 0153 00000000 		.4byte	.LFB74
+ 402 0157 24000000 		.4byte	.LFE74-.LFB74
+ 403 015b 01       		.uleb128 0x1
+ 404 015c 9C       		.byte	0x9c
+ 405 015d BE010000 		.4byte	0x1be
+ 406 0161 08       		.uleb128 0x8
+ 407 0162 97000000 		.4byte	.LASF22
+ 408 0166 01       		.byte	0x1
+ 409 0167 4A       		.byte	0x4a
+ 410 0168 8E000000 		.4byte	0x8e
+ 411 016c 00000000 		.4byte	.LLST0
+ 412 0170 08       		.uleb128 0x8
+ 413 0171 0B000000 		.4byte	.LASF23
+ 414 0175 01       		.byte	0x1
+ 415 0176 4A       		.byte	0x4a
+ 416 0177 5D000000 		.4byte	0x5d
+ 417 017b 2C000000 		.4byte	.LLST1
+ 418 017f 09       		.uleb128 0x9
+ 419 0180 0E000000 		.4byte	.LVL7
+ 420 0184 00020000 		.4byte	0x200
+ 421 0188 96010000 		.4byte	0x196
+ 422 018c 0A       		.uleb128 0xa
+ 423 018d 01       		.uleb128 0x1
+ 424 018e 50       		.byte	0x50
+ 425 018f 05       		.uleb128 0x5
+ 426 0190 03       		.byte	0x3
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 10
 
 
- 410 002a 0F       		.uleb128 0xf
- 411 002b 00       		.byte	0
- 412 002c 0B       		.uleb128 0xb
- 413 002d 0B       		.uleb128 0xb
- 414 002e 49       		.uleb128 0x49
- 415 002f 13       		.uleb128 0x13
- 416 0030 00       		.byte	0
- 417 0031 00       		.byte	0
- 418 0032 05       		.uleb128 0x5
- 419 0033 2E       		.uleb128 0x2e
- 420 0034 01       		.byte	0x1
- 421 0035 3F       		.uleb128 0x3f
- 422 0036 19       		.uleb128 0x19
- 423 0037 03       		.uleb128 0x3
- 424 0038 0E       		.uleb128 0xe
- 425 0039 3A       		.uleb128 0x3a
- 426 003a 0B       		.uleb128 0xb
- 427 003b 3B       		.uleb128 0x3b
- 428 003c 0B       		.uleb128 0xb
- 429 003d 27       		.uleb128 0x27
- 430 003e 19       		.uleb128 0x19
- 431 003f 11       		.uleb128 0x11
- 432 0040 01       		.uleb128 0x1
- 433 0041 12       		.uleb128 0x12
- 434 0042 06       		.uleb128 0x6
- 435 0043 40       		.uleb128 0x40
- 436 0044 18       		.uleb128 0x18
- 437 0045 9742     		.uleb128 0x2117
- 438 0047 19       		.uleb128 0x19
- 439 0048 01       		.uleb128 0x1
- 440 0049 13       		.uleb128 0x13
- 441 004a 00       		.byte	0
- 442 004b 00       		.byte	0
- 443 004c 06       		.uleb128 0x6
- 444 004d 898201   		.uleb128 0x4109
- 445 0050 00       		.byte	0
- 446 0051 11       		.uleb128 0x11
- 447 0052 01       		.uleb128 0x1
- 448 0053 31       		.uleb128 0x31
- 449 0054 13       		.uleb128 0x13
- 450 0055 00       		.byte	0
- 451 0056 00       		.byte	0
- 452 0057 07       		.uleb128 0x7
- 453 0058 2E       		.uleb128 0x2e
- 454 0059 00       		.byte	0
- 455 005a 3F       		.uleb128 0x3f
- 456 005b 19       		.uleb128 0x19
- 457 005c 03       		.uleb128 0x3
- 458 005d 0E       		.uleb128 0xe
- 459 005e 3A       		.uleb128 0x3a
- 460 005f 0B       		.uleb128 0xb
- 461 0060 3B       		.uleb128 0x3b
- 462 0061 0B       		.uleb128 0xb
- 463 0062 27       		.uleb128 0x27
- 464 0063 19       		.uleb128 0x19
- 465 0064 11       		.uleb128 0x11
- 466 0065 01       		.uleb128 0x1
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 10
+ 427 0191 00000000 		.4byte	.LC0
+ 428 0195 00       		.byte	0
+ 429 0196 09       		.uleb128 0x9
+ 430 0197 14000000 		.4byte	.LVL8
+ 431 019b 00020000 		.4byte	0x200
+ 432 019f AD010000 		.4byte	0x1ad
+ 433 01a3 0A       		.uleb128 0xa
+ 434 01a4 01       		.uleb128 0x1
+ 435 01a5 50       		.byte	0x50
+ 436 01a6 05       		.uleb128 0x5
+ 437 01a7 03       		.byte	0x3
+ 438 01a8 08000000 		.4byte	.LC2
+ 439 01ac 00       		.byte	0
+ 440 01ad 0B       		.uleb128 0xb
+ 441 01ae 1A000000 		.4byte	.LVL9
+ 442 01b2 00020000 		.4byte	0x200
+ 443 01b6 0A       		.uleb128 0xa
+ 444 01b7 01       		.uleb128 0x1
+ 445 01b8 50       		.byte	0x50
+ 446 01b9 02       		.uleb128 0x2
+ 447 01ba 74       		.byte	0x74
+ 448 01bb 00       		.sleb128 0
+ 449 01bc 00       		.byte	0
+ 450 01bd 00       		.byte	0
+ 451 01be 0C       		.uleb128 0xc
+ 452 01bf 79000000 		.4byte	0x79
+ 453 01c3 CE010000 		.4byte	0x1ce
+ 454 01c7 0D       		.uleb128 0xd
+ 455 01c8 87000000 		.4byte	0x87
+ 456 01cc FE       		.byte	0xfe
+ 457 01cd 00       		.byte	0
+ 458 01ce 0E       		.uleb128 0xe
+ 459 01cf 1A000000 		.4byte	.LASF31
+ 460 01d3 05       		.byte	0x5
+ 461 01d4 21       		.byte	0x21
+ 462 01d5 BE010000 		.4byte	0x1be
+ 463 01d9 05       		.uleb128 0x5
+ 464 01da 03       		.byte	0x3
+ 465 01db 00000000 		.4byte	sdata
+ 466 01df 0F       		.uleb128 0xf
+ 467 01e0 39010000 		.4byte	.LASF24
+ 468 01e4 39010000 		.4byte	.LASF24
+ 469 01e8 02       		.byte	0x2
+ 470 01e9 99       		.byte	0x99
+ 471 01ea 0F       		.uleb128 0xf
+ 472 01eb DA000000 		.4byte	.LASF25
+ 473 01ef DA000000 		.4byte	.LASF25
+ 474 01f3 03       		.byte	0x3
+ 475 01f4 72       		.byte	0x72
+ 476 01f5 0F       		.uleb128 0xf
+ 477 01f6 43010000 		.4byte	.LASF26
+ 478 01fa 43010000 		.4byte	.LASF26
+ 479 01fe 03       		.byte	0x3
+ 480 01ff 73       		.byte	0x73
+ 481 0200 10       		.uleb128 0x10
+ 482 0201 7E000000 		.4byte	.LASF27
+ 483 0205 7E000000 		.4byte	.LASF27
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 11
 
 
- 467 0066 12       		.uleb128 0x12
- 468 0067 06       		.uleb128 0x6
- 469 0068 40       		.uleb128 0x40
- 470 0069 18       		.uleb128 0x18
- 471 006a 9742     		.uleb128 0x2117
- 472 006c 19       		.uleb128 0x19
- 473 006d 00       		.byte	0
- 474 006e 00       		.byte	0
- 475 006f 08       		.uleb128 0x8
- 476 0070 05       		.uleb128 0x5
- 477 0071 00       		.byte	0
- 478 0072 03       		.uleb128 0x3
- 479 0073 0E       		.uleb128 0xe
- 480 0074 3A       		.uleb128 0x3a
- 481 0075 0B       		.uleb128 0xb
- 482 0076 3B       		.uleb128 0x3b
- 483 0077 0B       		.uleb128 0xb
- 484 0078 49       		.uleb128 0x49
- 485 0079 13       		.uleb128 0x13
- 486 007a 02       		.uleb128 0x2
- 487 007b 17       		.uleb128 0x17
- 488 007c 00       		.byte	0
- 489 007d 00       		.byte	0
- 490 007e 09       		.uleb128 0x9
- 491 007f 898201   		.uleb128 0x4109
- 492 0082 01       		.byte	0x1
- 493 0083 11       		.uleb128 0x11
- 494 0084 01       		.uleb128 0x1
- 495 0085 31       		.uleb128 0x31
- 496 0086 13       		.uleb128 0x13
- 497 0087 01       		.uleb128 0x1
- 498 0088 13       		.uleb128 0x13
- 499 0089 00       		.byte	0
- 500 008a 00       		.byte	0
- 501 008b 0A       		.uleb128 0xa
- 502 008c 8A8201   		.uleb128 0x410a
- 503 008f 00       		.byte	0
- 504 0090 02       		.uleb128 0x2
- 505 0091 18       		.uleb128 0x18
- 506 0092 9142     		.uleb128 0x2111
- 507 0094 18       		.uleb128 0x18
- 508 0095 00       		.byte	0
- 509 0096 00       		.byte	0
- 510 0097 0B       		.uleb128 0xb
- 511 0098 898201   		.uleb128 0x4109
- 512 009b 01       		.byte	0x1
- 513 009c 11       		.uleb128 0x11
- 514 009d 01       		.uleb128 0x1
- 515 009e 31       		.uleb128 0x31
- 516 009f 13       		.uleb128 0x13
- 517 00a0 00       		.byte	0
- 518 00a1 00       		.byte	0
- 519 00a2 0C       		.uleb128 0xc
- 520 00a3 2E       		.uleb128 0x2e
- 521 00a4 00       		.byte	0
- 522 00a5 3F       		.uleb128 0x3f
- 523 00a6 19       		.uleb128 0x19
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 11
+ 484 0209 04       		.byte	0x4
+ 485 020a 2A03     		.2byte	0x32a
+ 486 020c 00       		.byte	0
+ 487              		.section	.debug_abbrev,"",%progbits
+ 488              	.Ldebug_abbrev0:
+ 489 0000 01       		.uleb128 0x1
+ 490 0001 11       		.uleb128 0x11
+ 491 0002 01       		.byte	0x1
+ 492 0003 25       		.uleb128 0x25
+ 493 0004 0E       		.uleb128 0xe
+ 494 0005 13       		.uleb128 0x13
+ 495 0006 0B       		.uleb128 0xb
+ 496 0007 03       		.uleb128 0x3
+ 497 0008 0E       		.uleb128 0xe
+ 498 0009 1B       		.uleb128 0x1b
+ 499 000a 0E       		.uleb128 0xe
+ 500 000b 55       		.uleb128 0x55
+ 501 000c 17       		.uleb128 0x17
+ 502 000d 11       		.uleb128 0x11
+ 503 000e 01       		.uleb128 0x1
+ 504 000f 10       		.uleb128 0x10
+ 505 0010 17       		.uleb128 0x17
+ 506 0011 00       		.byte	0
+ 507 0012 00       		.byte	0
+ 508 0013 02       		.uleb128 0x2
+ 509 0014 24       		.uleb128 0x24
+ 510 0015 00       		.byte	0
+ 511 0016 0B       		.uleb128 0xb
+ 512 0017 0B       		.uleb128 0xb
+ 513 0018 3E       		.uleb128 0x3e
+ 514 0019 0B       		.uleb128 0xb
+ 515 001a 03       		.uleb128 0x3
+ 516 001b 0E       		.uleb128 0xe
+ 517 001c 00       		.byte	0
+ 518 001d 00       		.byte	0
+ 519 001e 03       		.uleb128 0x3
+ 520 001f 24       		.uleb128 0x24
+ 521 0020 00       		.byte	0
+ 522 0021 0B       		.uleb128 0xb
+ 523 0022 0B       		.uleb128 0xb
+ 524 0023 3E       		.uleb128 0x3e
+ 525 0024 0B       		.uleb128 0xb
+ 526 0025 03       		.uleb128 0x3
+ 527 0026 08       		.uleb128 0x8
+ 528 0027 00       		.byte	0
+ 529 0028 00       		.byte	0
+ 530 0029 04       		.uleb128 0x4
+ 531 002a 0F       		.uleb128 0xf
+ 532 002b 00       		.byte	0
+ 533 002c 0B       		.uleb128 0xb
+ 534 002d 0B       		.uleb128 0xb
+ 535 002e 49       		.uleb128 0x49
+ 536 002f 13       		.uleb128 0x13
+ 537 0030 00       		.byte	0
+ 538 0031 00       		.byte	0
+ 539 0032 05       		.uleb128 0x5
+ 540 0033 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 12
 
 
- 524 00a7 3C       		.uleb128 0x3c
- 525 00a8 19       		.uleb128 0x19
- 526 00a9 6E       		.uleb128 0x6e
- 527 00aa 0E       		.uleb128 0xe
- 528 00ab 03       		.uleb128 0x3
- 529 00ac 0E       		.uleb128 0xe
- 530 00ad 3A       		.uleb128 0x3a
- 531 00ae 0B       		.uleb128 0xb
- 532 00af 3B       		.uleb128 0x3b
- 533 00b0 0B       		.uleb128 0xb
- 534 00b1 00       		.byte	0
- 535 00b2 00       		.byte	0
- 536 00b3 0D       		.uleb128 0xd
- 537 00b4 2E       		.uleb128 0x2e
- 538 00b5 00       		.byte	0
- 539 00b6 3F       		.uleb128 0x3f
- 540 00b7 19       		.uleb128 0x19
- 541 00b8 3C       		.uleb128 0x3c
- 542 00b9 19       		.uleb128 0x19
- 543 00ba 6E       		.uleb128 0x6e
- 544 00bb 0E       		.uleb128 0xe
- 545 00bc 03       		.uleb128 0x3
- 546 00bd 0E       		.uleb128 0xe
- 547 00be 3A       		.uleb128 0x3a
- 548 00bf 0B       		.uleb128 0xb
- 549 00c0 3B       		.uleb128 0x3b
- 550 00c1 05       		.uleb128 0x5
- 551 00c2 00       		.byte	0
- 552 00c3 00       		.byte	0
- 553 00c4 00       		.byte	0
- 554              		.section	.debug_loc,"",%progbits
- 555              	.Ldebug_loc0:
- 556              	.LLST0:
- 557 0000 00000000 		.4byte	.LVL3
- 558 0004 0A000000 		.4byte	.LVL4
- 559 0008 0100     		.2byte	0x1
- 560 000a 50       		.byte	0x50
- 561 000b 0A000000 		.4byte	.LVL4
- 562 000f 1A000000 		.4byte	.LVL8
- 563 0013 0100     		.2byte	0x1
- 564 0015 54       		.byte	0x54
- 565 0016 1A000000 		.4byte	.LVL8
- 566 001a 24000000 		.4byte	.LFE39
- 567 001e 0400     		.2byte	0x4
- 568 0020 F3       		.byte	0xf3
- 569 0021 01       		.uleb128 0x1
- 570 0022 50       		.byte	0x50
- 571 0023 9F       		.byte	0x9f
- 572 0024 00000000 		.4byte	0
- 573 0028 00000000 		.4byte	0
- 574              	.LLST1:
- 575 002c 00000000 		.4byte	.LVL3
- 576 0030 0D000000 		.4byte	.LVL5-1
- 577 0034 0100     		.2byte	0x1
- 578 0036 51       		.byte	0x51
- 579 0037 0D000000 		.4byte	.LVL5-1
- 580 003b 24000000 		.4byte	.LFE39
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 12
+ 541 0034 00       		.byte	0
+ 542 0035 3F       		.uleb128 0x3f
+ 543 0036 19       		.uleb128 0x19
+ 544 0037 03       		.uleb128 0x3
+ 545 0038 0E       		.uleb128 0xe
+ 546 0039 3A       		.uleb128 0x3a
+ 547 003a 0B       		.uleb128 0xb
+ 548 003b 3B       		.uleb128 0x3b
+ 549 003c 0B       		.uleb128 0xb
+ 550 003d 27       		.uleb128 0x27
+ 551 003e 19       		.uleb128 0x19
+ 552 003f 11       		.uleb128 0x11
+ 553 0040 01       		.uleb128 0x1
+ 554 0041 12       		.uleb128 0x12
+ 555 0042 06       		.uleb128 0x6
+ 556 0043 40       		.uleb128 0x40
+ 557 0044 18       		.uleb128 0x18
+ 558 0045 9742     		.uleb128 0x2117
+ 559 0047 19       		.uleb128 0x19
+ 560 0048 00       		.byte	0
+ 561 0049 00       		.byte	0
+ 562 004a 06       		.uleb128 0x6
+ 563 004b 2E       		.uleb128 0x2e
+ 564 004c 01       		.byte	0x1
+ 565 004d 3F       		.uleb128 0x3f
+ 566 004e 19       		.uleb128 0x19
+ 567 004f 03       		.uleb128 0x3
+ 568 0050 0E       		.uleb128 0xe
+ 569 0051 3A       		.uleb128 0x3a
+ 570 0052 0B       		.uleb128 0xb
+ 571 0053 3B       		.uleb128 0x3b
+ 572 0054 0B       		.uleb128 0xb
+ 573 0055 27       		.uleb128 0x27
+ 574 0056 19       		.uleb128 0x19
+ 575 0057 11       		.uleb128 0x11
+ 576 0058 01       		.uleb128 0x1
+ 577 0059 12       		.uleb128 0x12
+ 578 005a 06       		.uleb128 0x6
+ 579 005b 40       		.uleb128 0x40
+ 580 005c 18       		.uleb128 0x18
+ 581 005d 9742     		.uleb128 0x2117
+ 582 005f 19       		.uleb128 0x19
+ 583 0060 01       		.uleb128 0x1
+ 584 0061 13       		.uleb128 0x13
+ 585 0062 00       		.byte	0
+ 586 0063 00       		.byte	0
+ 587 0064 07       		.uleb128 0x7
+ 588 0065 898201   		.uleb128 0x4109
+ 589 0068 00       		.byte	0
+ 590 0069 11       		.uleb128 0x11
+ 591 006a 01       		.uleb128 0x1
+ 592 006b 31       		.uleb128 0x31
+ 593 006c 13       		.uleb128 0x13
+ 594 006d 00       		.byte	0
+ 595 006e 00       		.byte	0
+ 596 006f 08       		.uleb128 0x8
+ 597 0070 05       		.uleb128 0x5
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 13
 
 
- 581 003f 0400     		.2byte	0x4
- 582 0041 F3       		.byte	0xf3
- 583 0042 01       		.uleb128 0x1
- 584 0043 51       		.byte	0x51
- 585 0044 9F       		.byte	0x9f
- 586 0045 00000000 		.4byte	0
- 587 0049 00000000 		.4byte	0
- 588              		.section	.debug_aranges,"",%progbits
- 589 0000 3C000000 		.4byte	0x3c
- 590 0004 0200     		.2byte	0x2
- 591 0006 00000000 		.4byte	.Ldebug_info0
- 592 000a 04       		.byte	0x4
- 593 000b 00       		.byte	0
- 594 000c 0000     		.2byte	0
- 595 000e 0000     		.2byte	0
- 596 0010 00000000 		.4byte	.LFB36
- 597 0014 08000000 		.4byte	.LFE36-.LFB36
- 598 0018 00000000 		.4byte	.LFB35
- 599 001c 08000000 		.4byte	.LFE35-.LFB35
- 600 0020 00000000 		.4byte	.LFB37
- 601 0024 08000000 		.4byte	.LFE37-.LFB37
- 602 0028 00000000 		.4byte	.LFB38
- 603 002c 02000000 		.4byte	.LFE38-.LFB38
- 604 0030 00000000 		.4byte	.LFB39
- 605 0034 24000000 		.4byte	.LFE39-.LFB39
- 606 0038 00000000 		.4byte	0
- 607 003c 00000000 		.4byte	0
- 608              		.section	.debug_ranges,"",%progbits
- 609              	.Ldebug_ranges0:
- 610 0000 00000000 		.4byte	.LFB36
- 611 0004 08000000 		.4byte	.LFE36
- 612 0008 00000000 		.4byte	.LFB35
- 613 000c 08000000 		.4byte	.LFE35
- 614 0010 00000000 		.4byte	.LFB37
- 615 0014 08000000 		.4byte	.LFE37
- 616 0018 00000000 		.4byte	.LFB38
- 617 001c 02000000 		.4byte	.LFE38
- 618 0020 00000000 		.4byte	.LFB39
- 619 0024 24000000 		.4byte	.LFE39
- 620 0028 00000000 		.4byte	0
- 621 002c 00000000 		.4byte	0
- 622              		.section	.debug_line,"",%progbits
- 623              	.Ldebug_line0:
- 624 0000 B3000000 		.section	.debug_str,"MS",%progbits,1
- 624      02005600 
- 624      00000201 
- 624      FB0E0D00 
- 624      01010101 
- 625              	.LASF6:
- 626 0000 6C6F6E67 		.ascii	"long long int\000"
- 626      206C6F6E 
- 626      6720696E 
- 626      7400
- 627              	.LASF24:
- 628 000e 75736572 		.ascii	"user_core.c\000"
- 628      5F636F72 
- 628      652E6300 
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 13
+ 598 0071 00       		.byte	0
+ 599 0072 03       		.uleb128 0x3
+ 600 0073 0E       		.uleb128 0xe
+ 601 0074 3A       		.uleb128 0x3a
+ 602 0075 0B       		.uleb128 0xb
+ 603 0076 3B       		.uleb128 0x3b
+ 604 0077 0B       		.uleb128 0xb
+ 605 0078 49       		.uleb128 0x49
+ 606 0079 13       		.uleb128 0x13
+ 607 007a 02       		.uleb128 0x2
+ 608 007b 17       		.uleb128 0x17
+ 609 007c 00       		.byte	0
+ 610 007d 00       		.byte	0
+ 611 007e 09       		.uleb128 0x9
+ 612 007f 898201   		.uleb128 0x4109
+ 613 0082 01       		.byte	0x1
+ 614 0083 11       		.uleb128 0x11
+ 615 0084 01       		.uleb128 0x1
+ 616 0085 31       		.uleb128 0x31
+ 617 0086 13       		.uleb128 0x13
+ 618 0087 01       		.uleb128 0x1
+ 619 0088 13       		.uleb128 0x13
+ 620 0089 00       		.byte	0
+ 621 008a 00       		.byte	0
+ 622 008b 0A       		.uleb128 0xa
+ 623 008c 8A8201   		.uleb128 0x410a
+ 624 008f 00       		.byte	0
+ 625 0090 02       		.uleb128 0x2
+ 626 0091 18       		.uleb128 0x18
+ 627 0092 9142     		.uleb128 0x2111
+ 628 0094 18       		.uleb128 0x18
+ 629 0095 00       		.byte	0
+ 630 0096 00       		.byte	0
+ 631 0097 0B       		.uleb128 0xb
+ 632 0098 898201   		.uleb128 0x4109
+ 633 009b 01       		.byte	0x1
+ 634 009c 11       		.uleb128 0x11
+ 635 009d 01       		.uleb128 0x1
+ 636 009e 31       		.uleb128 0x31
+ 637 009f 13       		.uleb128 0x13
+ 638 00a0 00       		.byte	0
+ 639 00a1 00       		.byte	0
+ 640 00a2 0C       		.uleb128 0xc
+ 641 00a3 01       		.uleb128 0x1
+ 642 00a4 01       		.byte	0x1
+ 643 00a5 49       		.uleb128 0x49
+ 644 00a6 13       		.uleb128 0x13
+ 645 00a7 01       		.uleb128 0x1
+ 646 00a8 13       		.uleb128 0x13
+ 647 00a9 00       		.byte	0
+ 648 00aa 00       		.byte	0
+ 649 00ab 0D       		.uleb128 0xd
+ 650 00ac 21       		.uleb128 0x21
+ 651 00ad 00       		.byte	0
+ 652 00ae 49       		.uleb128 0x49
+ 653 00af 13       		.uleb128 0x13
+ 654 00b0 2F       		.uleb128 0x2f
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 14
 
 
- 629              	.LASF8:
- 630 001a 756E7369 		.ascii	"unsigned int\000"
- 630      676E6564 
- 630      20696E74 
- 630      00
- 631              	.LASF25:
- 632 0027 433A5C64 		.ascii	"C:\\dev\\_git_projects\\Capstone-Rework\\Capstone-R"
- 632      65765C5F 
- 632      6769745F 
- 632      70726F6A 
- 632      65637473 
- 633 0056 65776F72 		.ascii	"ework_workspace\\Sensor_Cluster.cydsn\000"
- 633      6B5F776F 
- 633      726B7370 
- 633      6163655C 
- 633      53656E73 
- 634              	.LASF15:
- 635 007b 75736572 		.ascii	"user_core_initalize\000"
- 635      5F636F72 
- 635      655F696E 
- 635      6974616C 
- 635      697A6500 
- 636              	.LASF19:
- 637 008f 636C6561 		.ascii	"clear\000"
- 637      7200
- 638              	.LASF5:
- 639 0095 6C6F6E67 		.ascii	"long unsigned int\000"
- 639      20756E73 
- 639      69676E65 
- 639      6420696E 
- 639      7400
- 640              	.LASF7:
- 641 00a7 6C6F6E67 		.ascii	"long long unsigned int\000"
- 641      206C6F6E 
- 641      6720756E 
- 641      7369676E 
- 641      65642069 
- 642              	.LASF18:
- 643 00be 64617461 		.ascii	"data\000"
- 643      00
- 644              	.LASF26:
- 645 00c3 75617274 		.ascii	"uart_read\000"
- 645      5F726561 
- 645      6400
- 646              	.LASF21:
- 647 00cd 55415254 		.ascii	"UART_Stop\000"
- 647      5F53746F 
- 647      7000
- 648              	.LASF20:
- 649 00d7 55415254 		.ascii	"UART_Start\000"
- 649      5F537461 
- 649      727400
- 650              	.LASF1:
- 651 00e2 756E7369 		.ascii	"unsigned char\000"
- 651      676E6564 
- 651      20636861 
- 651      7200
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 14
+ 655 00b1 0B       		.uleb128 0xb
+ 656 00b2 00       		.byte	0
+ 657 00b3 00       		.byte	0
+ 658 00b4 0E       		.uleb128 0xe
+ 659 00b5 34       		.uleb128 0x34
+ 660 00b6 00       		.byte	0
+ 661 00b7 03       		.uleb128 0x3
+ 662 00b8 0E       		.uleb128 0xe
+ 663 00b9 3A       		.uleb128 0x3a
+ 664 00ba 0B       		.uleb128 0xb
+ 665 00bb 3B       		.uleb128 0x3b
+ 666 00bc 0B       		.uleb128 0xb
+ 667 00bd 49       		.uleb128 0x49
+ 668 00be 13       		.uleb128 0x13
+ 669 00bf 3F       		.uleb128 0x3f
+ 670 00c0 19       		.uleb128 0x19
+ 671 00c1 02       		.uleb128 0x2
+ 672 00c2 18       		.uleb128 0x18
+ 673 00c3 00       		.byte	0
+ 674 00c4 00       		.byte	0
+ 675 00c5 0F       		.uleb128 0xf
+ 676 00c6 2E       		.uleb128 0x2e
+ 677 00c7 00       		.byte	0
+ 678 00c8 3F       		.uleb128 0x3f
+ 679 00c9 19       		.uleb128 0x19
+ 680 00ca 3C       		.uleb128 0x3c
+ 681 00cb 19       		.uleb128 0x19
+ 682 00cc 6E       		.uleb128 0x6e
+ 683 00cd 0E       		.uleb128 0xe
+ 684 00ce 03       		.uleb128 0x3
+ 685 00cf 0E       		.uleb128 0xe
+ 686 00d0 3A       		.uleb128 0x3a
+ 687 00d1 0B       		.uleb128 0xb
+ 688 00d2 3B       		.uleb128 0x3b
+ 689 00d3 0B       		.uleb128 0xb
+ 690 00d4 00       		.byte	0
+ 691 00d5 00       		.byte	0
+ 692 00d6 10       		.uleb128 0x10
+ 693 00d7 2E       		.uleb128 0x2e
+ 694 00d8 00       		.byte	0
+ 695 00d9 3F       		.uleb128 0x3f
+ 696 00da 19       		.uleb128 0x19
+ 697 00db 3C       		.uleb128 0x3c
+ 698 00dc 19       		.uleb128 0x19
+ 699 00dd 6E       		.uleb128 0x6e
+ 700 00de 0E       		.uleb128 0xe
+ 701 00df 03       		.uleb128 0x3
+ 702 00e0 0E       		.uleb128 0xe
+ 703 00e1 3A       		.uleb128 0x3a
+ 704 00e2 0B       		.uleb128 0xb
+ 705 00e3 3B       		.uleb128 0x3b
+ 706 00e4 05       		.uleb128 0x5
+ 707 00e5 00       		.byte	0
+ 708 00e6 00       		.byte	0
+ 709 00e7 00       		.byte	0
+ 710              		.section	.debug_loc,"",%progbits
+ 711              	.Ldebug_loc0:
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 15
 
 
- 652              	.LASF14:
- 653 00f0 75617274 		.ascii	"uart_open\000"
- 653      5F6F7065 
- 653      6E00
- 654              	.LASF11:
- 655 00fa 63686172 		.ascii	"char\000"
- 655      00
- 656              	.LASF4:
- 657 00ff 6C6F6E67 		.ascii	"long int\000"
- 657      20696E74 
- 657      00
- 658              	.LASF10:
- 659 0108 646F7562 		.ascii	"double\000"
- 659      6C6500
- 660              	.LASF17:
- 661 010f 75617274 		.ascii	"uart_write\000"
- 661      5F777269 
- 661      746500
- 662              	.LASF23:
- 663 011a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 663      43313120 
- 663      352E342E 
- 663      31203230 
- 663      31363036 
- 664 014d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 664      20726576 
- 664      6973696F 
- 664      6E203233 
- 664      37373135 
- 665 0180 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 665      66756E63 
- 665      74696F6E 
- 665      2D736563 
- 665      74696F6E 
- 666              	.LASF3:
- 667 01a8 73686F72 		.ascii	"short unsigned int\000"
- 667      7420756E 
- 667      7369676E 
- 667      65642069 
- 667      6E7400
- 668              	.LASF0:
- 669 01bb 7369676E 		.ascii	"signed char\000"
- 669      65642063 
- 669      68617200 
- 670              	.LASF12:
- 671 01c7 6C6F6E67 		.ascii	"long double\000"
- 671      20646F75 
- 671      626C6500 
- 672              	.LASF9:
- 673 01d3 666C6F61 		.ascii	"float\000"
- 673      7400
- 674              	.LASF2:
- 675 01d9 73686F72 		.ascii	"short int\000"
- 675      7420696E 
- 675      7400
- 676              	.LASF22:
- 677 01e3 55415254 		.ascii	"UART_UartPutString\000"
-ARM GAS  C:\Users\keega\AppData\Local\Temp\ccxAtGW1.s 			page 15
+ 712              	.LLST0:
+ 713 0000 00000000 		.4byte	.LVL5
+ 714 0004 0A000000 		.4byte	.LVL6
+ 715 0008 0100     		.2byte	0x1
+ 716 000a 50       		.byte	0x50
+ 717 000b 0A000000 		.4byte	.LVL6
+ 718 000f 1A000000 		.4byte	.LVL10
+ 719 0013 0100     		.2byte	0x1
+ 720 0015 54       		.byte	0x54
+ 721 0016 1A000000 		.4byte	.LVL10
+ 722 001a 24000000 		.4byte	.LFE74
+ 723 001e 0400     		.2byte	0x4
+ 724 0020 F3       		.byte	0xf3
+ 725 0021 01       		.uleb128 0x1
+ 726 0022 50       		.byte	0x50
+ 727 0023 9F       		.byte	0x9f
+ 728 0024 00000000 		.4byte	0
+ 729 0028 00000000 		.4byte	0
+ 730              	.LLST1:
+ 731 002c 00000000 		.4byte	.LVL5
+ 732 0030 0D000000 		.4byte	.LVL7-1
+ 733 0034 0100     		.2byte	0x1
+ 734 0036 51       		.byte	0x51
+ 735 0037 0D000000 		.4byte	.LVL7-1
+ 736 003b 24000000 		.4byte	.LFE74
+ 737 003f 0400     		.2byte	0x4
+ 738 0041 F3       		.byte	0xf3
+ 739 0042 01       		.uleb128 0x1
+ 740 0043 51       		.byte	0x51
+ 741 0044 9F       		.byte	0x9f
+ 742 0045 00000000 		.4byte	0
+ 743 0049 00000000 		.4byte	0
+ 744              		.section	.debug_aranges,"",%progbits
+ 745 0000 54000000 		.4byte	0x54
+ 746 0004 0200     		.2byte	0x2
+ 747 0006 00000000 		.4byte	.Ldebug_info0
+ 748 000a 04       		.byte	0x4
+ 749 000b 00       		.byte	0
+ 750 000c 0000     		.2byte	0
+ 751 000e 0000     		.2byte	0
+ 752 0010 00000000 		.4byte	.LFB68
+ 753 0014 02000000 		.4byte	.LFE68-.LFB68
+ 754 0018 00000000 		.4byte	.LFB69
+ 755 001c 08000000 		.4byte	.LFE69-.LFB69
+ 756 0020 00000000 		.4byte	.LFB70
+ 757 0024 02000000 		.4byte	.LFE70-.LFB70
+ 758 0028 00000000 		.4byte	.LFB71
+ 759 002c 08000000 		.4byte	.LFE71-.LFB71
+ 760 0030 00000000 		.4byte	.LFB67
+ 761 0034 0C000000 		.4byte	.LFE67-.LFB67
+ 762 0038 00000000 		.4byte	.LFB72
+ 763 003c 08000000 		.4byte	.LFE72-.LFB72
+ 764 0040 00000000 		.4byte	.LFB73
+ 765 0044 02000000 		.4byte	.LFE73-.LFB73
+ 766 0048 00000000 		.4byte	.LFB74
+ 767 004c 24000000 		.4byte	.LFE74-.LFB74
+ 768 0050 00000000 		.4byte	0
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 16
 
 
- 677      5F556172 
- 677      74507574 
- 677      53747269 
- 677      6E6700
- 678              	.LASF16:
- 679 01f6 75617274 		.ascii	"uart_close\000"
- 679      5F636C6F 
- 679      736500
- 680              	.LASF13:
- 681 0201 73697A65 		.ascii	"sizetype\000"
- 681      74797065 
- 681      00
- 682              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 769 0054 00000000 		.4byte	0
+ 770              		.section	.debug_ranges,"",%progbits
+ 771              	.Ldebug_ranges0:
+ 772 0000 00000000 		.4byte	.LFB68
+ 773 0004 02000000 		.4byte	.LFE68
+ 774 0008 00000000 		.4byte	.LFB69
+ 775 000c 08000000 		.4byte	.LFE69
+ 776 0010 00000000 		.4byte	.LFB70
+ 777 0014 02000000 		.4byte	.LFE70
+ 778 0018 00000000 		.4byte	.LFB71
+ 779 001c 08000000 		.4byte	.LFE71
+ 780 0020 00000000 		.4byte	.LFB67
+ 781 0024 0C000000 		.4byte	.LFE67
+ 782 0028 00000000 		.4byte	.LFB72
+ 783 002c 08000000 		.4byte	.LFE72
+ 784 0030 00000000 		.4byte	.LFB73
+ 785 0034 02000000 		.4byte	.LFE73
+ 786 0038 00000000 		.4byte	.LFB74
+ 787 003c 24000000 		.4byte	.LFE74
+ 788 0040 00000000 		.4byte	0
+ 789 0044 00000000 		.4byte	0
+ 790              		.section	.debug_line,"",%progbits
+ 791              	.Ldebug_line0:
+ 792 0000 02010000 		.section	.debug_str,"MS",%progbits,1
+ 792      02006E00 
+ 792      00000201 
+ 792      FB0E0D00 
+ 792      01010101 
+ 793              	.LASF19:
+ 794 0000 55415254 		.ascii	"UART_Close\000"
+ 794      5F436C6F 
+ 794      736500
+ 795              	.LASF23:
+ 796 000b 636C6561 		.ascii	"clear\000"
+ 796      7200
+ 797              	.LASF15:
+ 798 0011 4144435F 		.ascii	"ADC_Read\000"
+ 798      52656164 
+ 798      00
+ 799              	.LASF31:
+ 800 001a 73646174 		.ascii	"sdata\000"
+ 800      6100
+ 801              	.LASF17:
+ 802 0020 55415254 		.ascii	"UART_Open\000"
+ 802      5F4F7065 
+ 802      6E00
+ 803              	.LASF30:
+ 804 002a 433A5C64 		.ascii	"C:\\dev\\_git_projects\\Capstone-Rework\\Capstone-R"
+ 804      65765C5F 
+ 804      6769745F 
+ 804      70726F6A 
+ 804      65637473 
+ 805 0059 65776F72 		.ascii	"ework_workspace\\Sensor_Cluster.cydsn\000"
+ 805      6B5F776F 
+ 805      726B7370 
+ 805      6163655C 
+ 805      53656E73 
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 17
+
+
+ 806              	.LASF27:
+ 807 007e 55415254 		.ascii	"UART_UartPutString\000"
+ 807      5F556172 
+ 807      74507574 
+ 807      53747269 
+ 807      6E6700
+ 808              	.LASF9:
+ 809 0091 666C6F61 		.ascii	"float\000"
+ 809      7400
+ 810              	.LASF22:
+ 811 0097 64617461 		.ascii	"data\000"
+ 811      00
+ 812              	.LASF1:
+ 813 009c 756E7369 		.ascii	"unsigned char\000"
+ 813      676E6564 
+ 813      20636861 
+ 813      7200
+ 814              	.LASF21:
+ 815 00aa 55415254 		.ascii	"UART_Write\000"
+ 815      5F577269 
+ 815      746500
+ 816              	.LASF5:
+ 817 00b5 6C6F6E67 		.ascii	"long unsigned int\000"
+ 817      20756E73 
+ 817      69676E65 
+ 817      6420696E 
+ 817      7400
+ 818              	.LASF3:
+ 819 00c7 73686F72 		.ascii	"short unsigned int\000"
+ 819      7420756E 
+ 819      7369676E 
+ 819      65642069 
+ 819      6E7400
+ 820              	.LASF25:
+ 821 00da 55415254 		.ascii	"UART_Start\000"
+ 821      5F537461 
+ 821      727400
+ 822              	.LASF18:
+ 823 00e5 55736572 		.ascii	"UserCore_Initalize\000"
+ 823      436F7265 
+ 823      5F496E69 
+ 823      74616C69 
+ 823      7A6500
+ 824              	.LASF10:
+ 825 00f8 646F7562 		.ascii	"double\000"
+ 825      6C6500
+ 826              	.LASF16:
+ 827 00ff 4144435F 		.ascii	"ADC_Open\000"
+ 827      4F70656E 
+ 827      00
+ 828              	.LASF14:
+ 829 0108 55736572 		.ascii	"UserCore_Run\000"
+ 829      436F7265 
+ 829      5F52756E 
+ 829      00
+ 830              	.LASF8:
+ 831 0115 756E7369 		.ascii	"unsigned int\000"
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 18
+
+
+ 831      676E6564 
+ 831      20696E74 
+ 831      00
+ 832              	.LASF7:
+ 833 0122 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 833      206C6F6E 
+ 833      6720756E 
+ 833      7369676E 
+ 833      65642069 
+ 834              	.LASF24:
+ 835 0139 4144435F 		.ascii	"ADC_Start\000"
+ 835      53746172 
+ 835      7400
+ 836              	.LASF26:
+ 837 0143 55415254 		.ascii	"UART_Stop\000"
+ 837      5F53746F 
+ 837      7000
+ 838              	.LASF28:
+ 839 014d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 839      43313120 
+ 839      352E342E 
+ 839      31203230 
+ 839      31363036 
+ 840 0180 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 840      20726576 
+ 840      6973696F 
+ 840      6E203233 
+ 840      37373135 
+ 841 01b3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 841      66756E63 
+ 841      74696F6E 
+ 841      2D736563 
+ 841      74696F6E 
+ 842              	.LASF13:
+ 843 01db 73697A65 		.ascii	"sizetype\000"
+ 843      74797065 
+ 843      00
+ 844              	.LASF6:
+ 845 01e4 6C6F6E67 		.ascii	"long long int\000"
+ 845      206C6F6E 
+ 845      6720696E 
+ 845      7400
+ 846              	.LASF11:
+ 847 01f2 63686172 		.ascii	"char\000"
+ 847      00
+ 848              	.LASF20:
+ 849 01f7 55415254 		.ascii	"UART_Read\000"
+ 849      5F526561 
+ 849      6400
+ 850              	.LASF2:
+ 851 0201 73686F72 		.ascii	"short int\000"
+ 851      7420696E 
+ 851      7400
+ 852              	.LASF4:
+ 853 020b 6C6F6E67 		.ascii	"long int\000"
+ 853      20696E74 
+ 853      00
+ARM GAS  C:\Users\keega\AppData\Local\Temp\ccXHeOSj.s 			page 19
+
+
+ 854              	.LASF12:
+ 855 0214 6C6F6E67 		.ascii	"long double\000"
+ 855      20646F75 
+ 855      626C6500 
+ 856              	.LASF29:
+ 857 0220 75736572 		.ascii	"user_core.c\000"
+ 857      5F636F72 
+ 857      652E6300 
+ 858              	.LASF0:
+ 859 022c 7369676E 		.ascii	"signed char\000"
+ 859      65642063 
+ 859      68617200 
+ 860              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

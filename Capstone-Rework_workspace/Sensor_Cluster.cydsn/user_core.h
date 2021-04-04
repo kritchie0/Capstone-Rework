@@ -21,11 +21,25 @@
 #define CLEAR_TERMINAL "\x1b[2J"
 #define CURSOR_HOME_TERMINAL "\x1b[H"
 
+
+typedef struct{
+    int v12;
+    int v5;
+    int external_temperature;
+    int mcu_temperature;
+}sadc_values;
+
+
+char sdata[MESSAGE_LENGTH];
+
 // Externals
-extern void user_core_initalize(void);
-extern void uart_open(void);
-extern void uart_close(void);
-extern void uart_read(void);
-extern void uart_write(char *data, int clear);
+
+void UserCore_Initalize(void);
+void UserCore_Run(void);
+void ADC_Open(void);
+void UART_Open(void);
+void UART_Close(void);
+void UART_Read(void);
+void UART_Write(char *data, int clear);
 
 /* [] END OF FILE */

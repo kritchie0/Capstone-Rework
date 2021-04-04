@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Capstone-Rework_workspace</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
@@ -72,6 +72,11 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_intClock.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
@@ -83,6 +88,10 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\DieTemp.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\DMA.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\EXT_TEMP_ADC.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\EXT_TEMP_ADC_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
@@ -97,6 +106,10 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\user_core.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V12_ADC.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V12_ADC_PM.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V5_ADC.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V5_ADC_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.elf</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.hex</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.map</v>
@@ -111,6 +124,11 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_intClock.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
@@ -122,6 +140,10 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\DieTemp.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\DMA.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\EXT_TEMP_ADC.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\EXT_TEMP_ADC_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
@@ -136,12 +158,15 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\user_core.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V12_ADC.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V12_ADC_PM.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V5_ADC.lst</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V5_ADC_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.elf</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.hex</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.map</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.gpdsc</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.rpt</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster_timing.html</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -159,6 +184,11 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_boot_v6_0</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_dmac_v1_10</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\ADC_SAR_SEQ_P4_v2_50.pdf</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\cy_pins_v2_20</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\DieTemp_P4_v1_0.pdf</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\DMA_v1_0.pdf</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\SCB_P4_v4_0.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -170,11 +200,21 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_boot_v6_0</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_dmac_v1_10</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\ADC_SAR_SEQ_P4_v2_50.pdf</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\cy_pins_v2_20</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\DieTemp_P4_v1_0.pdf</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\DMA_v1_0.pdf</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\SCB_P4_v4_0.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
 </CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
 </dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
@@ -192,7 +232,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1522, 721" SelectedTabbedMdiWindow="ff0ab1e4-9c3c-4589-9d67-7122f1f53492"><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\TopDesign\TopDesign.cysch" Guid="45b034ac-f7ca-4598-8b0e-43c0fb8175fc" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\main.c" Guid="ff0ab1e4-9c3c-4589-9d67-7122f1f53492" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\user_core.c" Guid="76f83130-f3f8-4713-b358-d3c18e9545fa" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\user_core.h" Guid="f6e2ca50-50c6-42ab-a1e8-038f39d7ee30" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Sensor_Cluster.cydwr" Guid="2f23a167-ef63-4560-81b5-2f29e2b66dcc" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1522, 721" SelectedTabbedMdiWindow="ff0ab1e4-9c3c-4589-9d67-7122f1f53492"><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\TopDesign\TopDesign.cysch" Guid="45b034ac-f7ca-4598-8b0e-43c0fb8175fc" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\main.c" Guid="ff0ab1e4-9c3c-4589-9d67-7122f1f53492" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\user_core.c" Guid="76f83130-f3f8-4713-b358-d3c18e9545fa" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\user_core.h" Guid="f6e2ca50-50c6-42ab-a1e8-038f39d7ee30" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Sensor_Cluster.cydwr" Guid="2f23a167-ef63-4560-81b5-2f29e2b66dcc" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="eeabaef3-3b5e-447c-bff5-2951a8abf6c5" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -1,9 +1,3 @@
---------------- Rebuild Started: 04/03/2021 20:56:17 Project: main.c, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM0\ARM_GCC_541\Debug\main.o
-main.c: In function 'main':
-main.c:28:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-     sprintf(sdata, "Welcome to Sensor Cluster Firmware v%s\r\n", VERSION);
-     ^
-main.c:28:5: warning: incompatible implicit declaration of built-in function 'sprintf'
-main.c:28:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
---------------- Rebuild Succeeded: 04/03/2021 20:56:17 ---------------
+--------------- Rebuild Started: 04/03/2021 23:10:06 Project: user_core.c, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/user_core.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c user_core.c -o .\CortexM0\ARM_GCC_541\Debug\user_core.o
+--------------- Rebuild Succeeded: 04/03/2021 23:10:06 ---------------
