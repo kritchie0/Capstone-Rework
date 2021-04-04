@@ -1,6 +1,6 @@
 // ======================================================================
 // Sensor_Cluster.v generated from TopDesign.cysch
-// 04/02/2021 at 22:41
+// 04/03/2021 at 20:33
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -473,52 +473,52 @@ endmodule
 // top
 module top ;
 
-          wire  Net_22;
-          wire  Net_21;
-          wire  Net_20;
-          wire  Net_19;
-          wire  Net_18;
-          wire  Net_17;
-          wire  Net_16;
-          wire  Net_15;
-          wire  Net_14;
-          wire  Net_13;
-          wire  Net_12;
-          wire  Net_11;
-          wire  Net_10;
-          wire  Net_9;
-          wire  Net_8;
-          wire  Net_7;
-          wire  Net_6;
-          wire  Net_5;
-          wire  Net_4;
-          wire  Net_3;
-          wire  Net_2;
-          wire  Net_1;
+          wire  Net_57;
+          wire  Net_56;
+          wire  Net_55;
+          wire  Net_54;
+          wire  Net_53;
+          wire  Net_52;
+          wire  Net_51;
+          wire  Net_50;
+          wire  Net_49;
+          wire  Net_48;
+          wire  Net_47;
+          wire  Net_46;
+          wire  Net_45;
+          wire  Net_44;
+          wire  Net_43;
+          wire  Net_42;
+          wire  Net_41;
+          wire  Net_40;
+          wire  Net_39;
+          wire  Net_38;
+          wire  Net_37;
+          wire  Net_36;
 
     SCB_P4_v4_0_0 UART (
         .clock(1'b0),
         .cts_in(1'b0),
-        .interrupt(Net_3),
+        .interrupt(Net_38),
         .m_miso(1'b0),
-        .m_mosi(Net_5),
-        .m_sclk(Net_6),
-        .m_ss0(Net_7),
-        .m_ss1(Net_8),
-        .m_ss2(Net_9),
-        .m_ss3(Net_10),
-        .rts_out(Net_11),
-        .rx_dma_out(Net_12),
+        .m_mosi(Net_40),
+        .m_sclk(Net_41),
+        .m_ss0(Net_42),
+        .m_ss1(Net_43),
+        .m_ss2(Net_44),
+        .m_ss3(Net_45),
+        .rts_out(Net_46),
+        .rx_dma_out(Net_47),
         .rx_in(1'b0),
-        .rx_tx_out(Net_14),
-        .s_miso(Net_15),
+        .rx_tx_out(Net_49),
+        .s_miso(Net_50),
         .s_mosi(1'b0),
         .s_sclk(1'b0),
         .s_ss(1'b0),
-        .scl_b(Net_19),
-        .sda_b(Net_20),
-        .tx_dma_out(Net_21),
-        .tx_out(Net_22));
+        .scl_b(Net_54),
+        .sda_b(Net_55),
+        .tx_dma_out(Net_56),
+        .tx_out(Net_57));
 
 
 

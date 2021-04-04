@@ -38,8 +38,8 @@
         <Files Root="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
-          <File BuildType="BUILD" Toolchain="">util.c</File>
-          <File BuildType="BUILD" Toolchain="">util.h</File>
+          <File BuildType="BUILD" Toolchain="">user_core.c</File>
+          <File BuildType="BUILD" Toolchain="">user_core.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Generated_Source\PSoC4">

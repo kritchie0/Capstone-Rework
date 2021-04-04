@@ -1,5 +1,5 @@
 -- Project:   Sensor_Cluster
--- Generated: 04/02/2021 22:41:59
+-- Generated: 04/03/2021 20:33:35
 -- PSoC Creator  4.4
 
 ENTITY Sensor_Cluster IS
@@ -28,9 +28,9 @@ ARCHITECTURE __DEFAULT__ OF Sensor_Cluster IS
     SIGNAL ClockBlock_Routed1 : bit;
     SIGNAL ClockBlock_SysClk : bit;
     SIGNAL ClockBlock_WCO : bit;
-    SIGNAL Net_12 : bit;
-    SIGNAL Net_21 : bit;
-    SIGNAL Net_3 : bit;
+    SIGNAL Net_38 : bit;
+    SIGNAL Net_47 : bit;
+    SIGNAL Net_56 : bit;
     SIGNAL \UART:Net_847_ff2\ : bit;
     ATTRIBUTE global_signal OF \UART:Net_847_ff2\ : SIGNAL IS true;
     SIGNAL \UART:miso_s_wire\ : bit;
@@ -55,7 +55,9 @@ ARCHITECTURE __DEFAULT__ OF Sensor_Cluster IS
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
     ATTRIBUTE lib_model OF \UART:tx(0)\ : LABEL IS "iocell1";
+    ATTRIBUTE Location OF \UART:tx(0)\ : LABEL IS "P7[1]";
     ATTRIBUTE lib_model OF \UART:rx(0)\ : LABEL IS "iocell2";
+    ATTRIBUTE Location OF \UART:rx(0)\ : LABEL IS "P7[0]";
     COMPONENT iocell
         PORT (
             oe : IN std_ulogic;
@@ -439,7 +441,7 @@ BEGIN
             scb_mode => 2)
         PORT MAP(
             clock => \UART:Net_847_ff2\,
-            interrupt => Net_3,
+            interrupt => Net_38,
             uart_rx => \UART:rx_wire\,
             uart_tx => \UART:tx_wire\,
             uart_cts => open,
@@ -455,7 +457,7 @@ BEGIN
             miso_s => \UART:miso_s_wire\,
             select_s => open,
             sclk_s => open,
-            tr_tx_req => Net_21,
-            tr_rx_req => Net_12);
+            tr_tx_req => Net_56,
+            tr_rx_req => Net_47);
 
 END __DEFAULT__;
