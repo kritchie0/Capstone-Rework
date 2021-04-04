@@ -17,13 +17,16 @@
 #define MESSAGE_LENGTH (255u)
 #define TRUE (1u)
 #define FALSE (0u)
+#define CLEAR (1u)
+#define NO_CLEAR (0u)
 
 #define CLEAR_TERMINAL "\x1b[2J"
 #define CURSOR_HOME_TERMINAL "\x1b[H"
 
+#define V12_VOLTAGE ((4676 + 984)/984)
 
 typedef struct{
-    int v12;
+    unsigned int v12;
     int v5;
     int external_temperature;
     int mcu_temperature;
@@ -36,10 +39,10 @@ char sdata[MESSAGE_LENGTH];
 
 void UserCore_Initalize(void);
 void UserCore_Run(void);
-void ADC_Open(void);
-void UART_Open(void);
-void UART_Close(void);
-void UART_Read(void);
-void UART_Write(char *data, int clear);
+void Adc_Open(void);
+void Uart_Open(void);
+void Uart_Close(void);
+void Uart_Read(void);
+void Uart_Write(char *data, int clear);
 
 /* [] END OF FILE */
