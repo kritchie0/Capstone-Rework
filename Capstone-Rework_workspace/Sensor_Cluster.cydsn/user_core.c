@@ -13,28 +13,29 @@
 #include "user_core.h"
 
 double v12_adc, v5_adc, ext_temp_adc, mcu_temp_adc;
-double v12_input; 
-
-sadc_values sadc_raw;
 
 void UserCore_Initalize(void)
 {
     Uart_Open();
     Adc_Open();
-    DMA_Start((void *)ADC_SAR_CHAN0_RESULT_PTR, (void *)&sadc_raw.v12);
+    DMA_Start((void*)ADC_SAR_CHAN_RESULT_PTR, &sadc_values);
 }
 
 void UserCore_Run(void)
 {   
+    int v5_input;
+    int v12_input;
     
-    //DMA_Start((void *)ADC_SAR_CHAN1_RESULT_PTR, (void *)&sadc_raw.v5);
     //DMA_Start((void *)ADC_SAR_CHAN2_RESULT_PTR, (void *)&sadc_raw.external_temperature);
     //DMA_Start((void *)ADC_SAR_CHAN3_RESULT_PTR, (void *)&sadc_raw.mcu_temperature);
     
     ADC_StartConvert();
     
-    //v12_adc = (5 / 4095) * sadc_raw.v12;
-    //v12_input = v12_adc * V12_VOLTAGE;
+    //v12_input = (5 / 4095) * sadc_raw.v12;
+    //v12_input *= V12_VOLTAGE;    
+    //v5_input = (5 / 4095) * sadc_raw.v5;
+    //v5_input *= V5_VOLTAGE;
+
     
     if(0u != CyDmaGetInterruptSourceMasked())
     {
@@ -43,20 +44,21 @@ void UserCore_Run(void)
         
         //sprintf(sdata, "12V: %d\t 5V: %d\t Ext_Temp: %d\t MCU_Temp: %d\r\n", sadc_raw.v12, sadc_raw.v5, 
         //    sadc_raw.external_temperature, sadc_raw.mcu_temperature);
-        
-        if(sadc_raw.v12 <= 1140)
+#if 0        
+        if(sadc_raw.v12 < 1140)
         {
             Uart_Write("LOW VOLTAGE\r\n", CLEAR);
         }
-        if(sadc_raw.v12 >= 2129)
+        if(sadc_raw.v12 > 2129)
         {
             Uart_Write("OVER VOLTAGE\r\n", CLEAR);
         }
-        else
-        {
-            sprintf(sdata, "12V ADC Value: %d\r\n", sadc_raw.v12);
-            Uart_Write(sdata, CLEAR);
-        }
+#endif
+        //else
+        //{
+            sprintf(sdata, "12V: %d\t 5V: %d\r\n", sadc_values[0], sadc_values[1]);
+            Uart_Write(sdata, NO_CLEAR);
+        //}
     }
  
 }

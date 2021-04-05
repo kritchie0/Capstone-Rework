@@ -13,9 +13,24 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Capstone-Rework_workspace\Sensor_Cluster">
 <ExpandedNodeIds>
 <v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\TopDesign</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Pins</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Analog</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\DMA</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Clocks</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Interrupts</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\System</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Directives</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Flash Security</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\Header Files</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\Header Files\cyapicallbacks.h</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\Source Files</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\Source Files\main.c</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\Pins</v>
@@ -34,9 +49,25 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\user_core\user_core.c</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\user_core\user_core.h</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4</v>
+<v>Capstone-Rework_workspace\CE224339.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\TopDesign</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Pins</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Analog</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\DMA</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Clocks</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Interrupts</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\System</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Directives</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.cydwr\Flash Security</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\Header Files</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\Header Files\cyapicallbacks.h</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\Source Files</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\Source Files\main.c</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr</v>
@@ -48,17 +79,24 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\user_core\user_core.c</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\user_core\user_core.h</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source</v>
+<v>Capstone-Rework_workspace\CE224339.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\TopDesign</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\TopDesign\TopDesign.cysch</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\TopDesign</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\TopDesign\TopDesign.cysch</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign\TopDesign.cysch</v>
@@ -67,6 +105,10 @@
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.gpdsc</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.rpt</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01_timing.html</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541</v>
@@ -119,6 +161,10 @@
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.gpdsc</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01.rpt</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\CE224339_PSoC4_SPI_Master_DMA01_timing.html</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541</v>
@@ -162,11 +208,6 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V12_ADC_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V5_ADC.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V5_ADC_PM.lst</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.elf</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.hex</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.map</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.gpdsc</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.rpt</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -177,6 +218,16 @@
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Capstone-Rework_workspace\Sensor_Cluster">
 <ExpandedNodeIds>
 <v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\PSoC 4 Architecture TRM</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\PSoC 4200M Family Datasheet</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\System Reference Guides</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\System Reference Guides\cy_boot_v6_0</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\System Reference Guides\cy_dmac_v1_10</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\DMA_Channel_P4_v1_0</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\DMA_Channel_P4_v1_0\DMA_v1_0.pdf</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\SCB_P4_v4_0.pdf</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\PSoC 4 Architecture TRM</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\PSoC 4200M Family Datasheet</v>
@@ -193,6 +244,16 @@
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Capstone-Rework_workspace</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\PSoC 4 Architecture TRM</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\PSoC 4200M Family Datasheet</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\System Reference Guides</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\System Reference Guides\cy_boot_v6_0</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\System Reference Guides\cy_dmac_v1_10</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\System Reference Guides\cy_lfclk_v1_20</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\DMA_Channel_P4_v1_0</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\DMA_Channel_P4_v1_0\DMA_v1_0.pdf</v>
+<v>Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01\SCB_P4_v4_0.pdf</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\PSoC 4 Architecture TRM</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\PSoC 4200M Family Datasheet</v>
@@ -224,7 +285,10 @@
 <name v=".\Sensor_Cluster.cydsn\main.c" />
 <name v=".\Sensor_Cluster.cydsn\user_core.c" />
 <name v=".\Sensor_Cluster.cydsn\user_core.h" />
-<name v=".\Sensor_Cluster.cydsn\Sensor_Cluster.cydwr" />
+<name v=".\Sensor_Cluster.cydsn\Generated_Source\PSoC4\ADC.h" />
+<name v=".\CE224339_PSoC4_SPI_Master_DMA01.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\CE224339_PSoC4_SPI_Master_DMA01.cydsn\CE224339_PSoC4_SPI_Master_DMA01.cydwr" />
+<name v=".\CE224339_PSoC4_SPI_Master_DMA01.cydsn\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -232,7 +296,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1522, 721" SelectedTabbedMdiWindow="ff0ab1e4-9c3c-4589-9d67-7122f1f53492"><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\TopDesign\TopDesign.cysch" Guid="45b034ac-f7ca-4598-8b0e-43c0fb8175fc" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\main.c" Guid="ff0ab1e4-9c3c-4589-9d67-7122f1f53492" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\user_core.c" Guid="76f83130-f3f8-4713-b358-d3c18e9545fa" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\user_core.h" Guid="f6e2ca50-50c6-42ab-a1e8-038f39d7ee30" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Sensor_Cluster.cydwr" Guid="2f23a167-ef63-4560-81b5-2f29e2b66dcc" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="eeabaef3-3b5e-447c-bff5-2951a8abf6c5" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1522, 721" SelectedTabbedMdiWindow="45b034ac-f7ca-4598-8b0e-43c0fb8175fc"><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\TopDesign\TopDesign.cysch" Guid="45b034ac-f7ca-4598-8b0e-43c0fb8175fc" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\main.c" Guid="ff0ab1e4-9c3c-4589-9d67-7122f1f53492" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\user_core.c" Guid="76f83130-f3f8-4713-b358-d3c18e9545fa" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\user_core.h" Guid="f6e2ca50-50c6-42ab-a1e8-038f39d7ee30" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="eeabaef3-3b5e-447c-bff5-2951a8abf6c5" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Generated_Source\PSoC4\ADC.h" Guid="80799300-998a-48b3-940b-3f948e233eee" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01.cydsn\TopDesign\TopDesign.cysch" Guid="0ada9e66-ae89-488b-8675-2c2d58f718cb" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01.cydsn\CE224339_PSoC4_SPI_Master_DMA01.cydwr" Guid="c412f17d-c8f3-4c84-a4f4-960bac6dffa2" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\CE224339_PSoC4_SPI_Master_DMA01.cydsn\main.c" Guid="02112a8b-c787-4889-ae7a-1c52b7187e99" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
