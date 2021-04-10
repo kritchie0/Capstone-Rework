@@ -10,7 +10,7 @@
  * ========================================
 */
 
-#include "user_core.h"
+#include "Core.h"
 
 double v12_adc, v5_adc, ext_temp_adc, mcu_temp_adc;
 

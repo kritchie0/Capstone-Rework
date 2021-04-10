@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Capstone-Rework_workspace\Sensor_Cluster\Core\Core.c">
 <ExpandedNodeIds>
 <v>Capstone-Rework_workspace</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
@@ -26,14 +26,19 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\System</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\Directives</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr\Flash Security</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\App</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\App\inc</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\App\inc\Cluster_App.h</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\App\src</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\App\src\Cluster_App.c</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Core</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Core\Core.c</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Core\Core.h</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\drivers</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Header Files</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Header Files\cyapicallbacks.h</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Source Files</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Source Files\main.c</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\user_core</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\user_core\user_core.c</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\user_core\user_core.h</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source\PSoC4</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -41,14 +46,19 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\TopDesign</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.cydwr</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\App</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\App\inc</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\App\inc\Cluster_App.h</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\App\src</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\App\src\Cluster_App.c</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Core</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Core\Core.c</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Core\Core.h</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\drivers</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Header Files</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Header Files\cyapicallbacks.h</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Source Files</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Source Files\main.c</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\user_core</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\user_core\user_core.c</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\user_core\user_core.h</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Generated_Source</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
@@ -107,7 +117,6 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\user_core.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V12_ADC.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V12_ADC_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V5_ADC.lst</v>
@@ -159,7 +168,6 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_tx_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_UART_BOOT.lst</v>
-<v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\user_core.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V12_ADC.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V12_ADC_PM.lst</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Listing Files\V5_ADC.lst</v>
@@ -169,6 +177,7 @@
 <v>Capstone-Rework_workspace\Sensor_Cluster\CortexM0\ARM_GCC_541\Debug\Sensor_Cluster.map</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.gpdsc</v>
 <v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster.rpt</v>
+<v>Capstone-Rework_workspace\Sensor_Cluster\Sensor_Cluster_timing.html</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -226,9 +235,10 @@
 <OpenDocs>
 <name v=".\Sensor_Cluster.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Sensor_Cluster.cydsn\main.c" />
-<name v=".\Sensor_Cluster.cydsn\user_core.c" />
-<name v=".\Sensor_Cluster.cydsn\user_core.h" />
-<name v=".\Sensor_Cluster.cydsn\Generated_Source\PSoC4\ADC.h" />
+<name v=".\Sensor_Cluster.cydsn\Core.c" />
+<name v=".\Sensor_Cluster.cydsn\Core.h" />
+<name v=".\Sensor_Cluster.cydsn\Cluster_App.c" />
+<name v=".\Sensor_Cluster.cydsn\Cluster_App.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -236,7 +246,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1522, 721" SelectedTabbedMdiWindow="ff0ab1e4-9c3c-4589-9d67-7122f1f53492"><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\TopDesign\TopDesign.cysch" Guid="45b034ac-f7ca-4598-8b0e-43c0fb8175fc" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\main.c" Guid="ff0ab1e4-9c3c-4589-9d67-7122f1f53492" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\user_core.c" Guid="f9f831c5-79c0-47bc-b5b9-56acfdccd076" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\user_core.h" Guid="f6e2ca50-50c6-42ab-a1e8-038f39d7ee30" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Generated_Source\PSoC4\ADC.h" Guid="80799300-998a-48b3-940b-3f948e233eee" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="eeabaef3-3b5e-447c-bff5-2951a8abf6c5" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1522, 721" SelectedTabbedMdiWindow="ff0ab1e4-9c3c-4589-9d67-7122f1f53492"><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\TopDesign\TopDesign.cysch" Guid="45b034ac-f7ca-4598-8b0e-43c0fb8175fc" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\main.c" Guid="ff0ab1e4-9c3c-4589-9d67-7122f1f53492" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Core.c" Guid="f9f831c5-79c0-47bc-b5b9-56acfdccd076" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Core.h" Guid="f6e2ca50-50c6-42ab-a1e8-038f39d7ee30" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Cluster_App.c" Guid="ca1f3dfc-1db5-44dd-98c4-4063ebccb04b" /><DocumentWindow Key="C:\dev\_git_projects\Capstone-Rework\Capstone-Rework_workspace\Sensor_Cluster.cydsn\Cluster_App.h" Guid="498dc144-11b6-4595-ab99-66d38c938528" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
