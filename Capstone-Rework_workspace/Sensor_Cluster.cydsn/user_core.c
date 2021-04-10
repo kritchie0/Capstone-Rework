@@ -18,49 +18,46 @@ void UserCore_Initalize(void)
 {
     Uart_Open();
     Adc_Open();
-    DMA_Start((void*)ADC_SAR_CHAN_RESULT_PTR, &sadc_values);
+    ADC_StartConvert();
 }
 
 void UserCore_Run(void)
 {   
-    int v5_input;
-    int v12_input;
+    float fv5_input, fv12_input;
+    uint16 mv5_input;
+    uint16 v5_input;
+    uint16 mv12_input;
+    uint16 v12_input;
     
-    //DMA_Start((void *)ADC_SAR_CHAN2_RESULT_PTR, (void *)&sadc_raw.external_temperature);
-    //DMA_Start((void *)ADC_SAR_CHAN3_RESULT_PTR, (void *)&sadc_raw.mcu_temperature);
+    sadc_values[0] = ADC_GetResult16(0);
+    sadc_values[1] = ADC_GetResult16(1);
     
-    ADC_StartConvert();
+    mv12_input = ADC_CountsTo_mVolts(0, sadc_values[0]);
+    mv5_input = ADC_CountsTo_mVolts(1, sadc_values[1]);
     
-    //v12_input = (5 / 4095) * sadc_raw.v12;
-    //v12_input *= V12_VOLTAGE;    
-    //v5_input = (5 / 4095) * sadc_raw.v5;
-    //v5_input *= V5_VOLTAGE;
+    sprintf(sdata, "12V_ADCmV: %d\t 5V_ADCmV: %d\r\n", mv12_input, mv5_input);
+    Uart_Write(sdata, NO_CLEAR);
 
-    
-    if(0u != CyDmaGetInterruptSourceMasked())
-    {
-        /* Once asserted, interrupt remains high (active) until cleared. */
-        CyDmaClearInterruptSource(DMA_CHANNEL_MASK);
+    v12_input = mv12_input * V12_VOLTAGE;
+    //v12_input = fv12_input;
         
-        //sprintf(sdata, "12V: %d\t 5V: %d\t Ext_Temp: %d\t MCU_Temp: %d\r\n", sadc_raw.v12, sadc_raw.v5, 
-        //    sadc_raw.external_temperature, sadc_raw.mcu_temperature);
+    //sprintf(sdata, "12V: %d\t 5V: %d\t Ext_Temp: %d\t MCU_Temp: %d\r\n", sadc_raw.v12, sadc_raw.v5, 
+    //    sadc_raw.external_temperature, sadc_raw.mcu_temperature);
 #if 0        
-        if(sadc_raw.v12 < 1140)
-        {
-            Uart_Write("LOW VOLTAGE\r\n", CLEAR);
-        }
-        if(sadc_raw.v12 > 2129)
-        {
-            Uart_Write("OVER VOLTAGE\r\n", CLEAR);
-        }
-#endif
-        //else
-        //{
-            sprintf(sdata, "12V: %d\t 5V: %d\r\n", sadc_values[0], sadc_values[1]);
-            Uart_Write(sdata, NO_CLEAR);
-        //}
+    if(sadc_raw.v12 < 1140)
+    {
+        Uart_Write("LOW VOLTAGE\r\n", CLEAR);
     }
- 
+    if(sadc_raw.v12 > 2129)
+    {
+        Uart_Write("OVER VOLTAGE\r\n", CLEAR);
+    }
+#endif
+    //else
+    //{
+        sprintf(sdata, "12V: %d\t 5V: %d\r\n", v12_input, v5_input);
+        Uart_Write(sdata, NO_CLEAR);
+    //} 
 }
 
 // ADC Functionality

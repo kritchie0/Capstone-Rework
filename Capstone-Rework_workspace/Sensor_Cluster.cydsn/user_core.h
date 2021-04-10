@@ -23,10 +23,10 @@
 #define CLEAR_TERMINAL "\x1b[2J"
 #define CURSOR_HOME_TERMINAL "\x1b[H"
 
-#define V12_VOLTAGE ((4676 + 984) / 984)
+#define V12_VOLTAGE 5.7
 #define V5_VOLTAGE ((983 + 978) / 978)
 
-unsigned int sadc_values[ADC_SEQUENCED_CHANNELS_NUM];
+uint16 sadc_values[ADC_SEQUENCED_CHANNELS_NUM];
 
 
 char sdata[MESSAGE_LENGTH];
